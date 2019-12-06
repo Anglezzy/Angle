@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 边框，用于查看元素的大小以及位置 */
+.border01 {
+  border: 1px solid blueviolet
+}
+
+/* 文本居中 */
+.tc {
+  text-align: center;
+}
+
+/* 压力盒子的水平居中 */
+.fc {
+  display: flex;
+  /* 子元素水平居中 */
+  justify-content: center;
+
+}
+
+/* 压力盒子的垂直居中，只有盒子高度大于任意一个子元素的时候才会有效 */
+.vc {
+  display: flex;
+  /* 水平靠右 */
+  justify-content: flex-end;
+  /* 垂直居中 */
+  align-items: center;
+}
+
+
+/* 压力布局和子元素换行 */
+.flex-warp01 {
+  display: flex;
+  /* 当子元素宽度的总宽度超过容器时换行 */
+  flex-wrap: wrap;
+  /* 对齐还是可以使用 */
+  justify-content: space-between;
+}
+
+/* 子元素设定宽度 */
+.flex-warp01>div {
+  width: 25%;
+}

@@ -1,0 +1,64 @@
+/* 绝对定位，浏览器内容位置 */
+.abs01 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ff0000;
+  /* 绝对定位 和位置 */
+  position: absolute;
+  top: 300px;
+  left: 500px;
+}
+
+/* 相对容器的绝对定位 */
+.container {
+  border: 1px solid #ff0000;
+  /* 容器需要指定定位方式为相对 */
+  position: relative;
+  height: 50px;
+}
+
+.abs02 {
+
+  border: 1px solid #0000ff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* 绝对定位的叠加效果 */
+.container01 {
+  height: 300px;
+  border: 1px solid #ff0000;
+  position: relative;
+}
+
+.mydiv {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.mydiv:hover {
+  z-index: 100;
+
+}
+
+.mydiv01 {
+  background-color: #0000ff;
+  top: 20px;
+  left: 20px;
+}
+
+.mydiv02 {
+  background-color: #00ffff;
+  top: 40px;
+  left: 40px;
+  /* 定位元素的z轴优先级，越高的在越前面 */
+  z-index: 10;
+}
+
+.mydiv03 {
+  background-color: #ff00ff;
+  top: 60px;
+  left: 60px;
+}

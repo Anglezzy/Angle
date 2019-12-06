@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>一个简单的综合演示</title>
+  <style>
+    /* 通过注释描述css类的作用，方便自己理解页面的样式以及组成 */
+    /* 去掉body多余的边距 */
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    /* 
+    最上方的返回菜单样式
+    */
+    .top-menu {
+      /* 文本要靠右 */
+      text-align: right;
+      /* 需要背景颜色 */
+      background-color: #303f9f;
+      /*  
+      元素的内边距，意思是该元素和里面的元素分开
+      padding后面的四个值分别是上右下左的边距值
+      */
+      padding: 0.5em 0.5em 0.5em 0.5em;
+    }
+
+    /* 头部菜单的超链接样式 */
+    .top-a {
+      color: #ffffff;
+      /* 去掉下划线 */
+      text-decoration: none;
+
+      /*字体大小*/
+      font-size: 1.2rem;
+    }
+
+    /* 标题的样式 */
+    .title {
+      background-color: #a1a5bb;
+      color: #ffffff;
+      text-align: center;
+      font-size: 2rem;
+      /* 如果padding只给一个值，表示上右下左都是相同的值 */
+      padding: 1rem;
+    }
+
+    /* 标题文字突出显示 */
+    .title-text {
+      color: #ff4081;
+      font-size: 1.2em;
+    }
+
+    /* 描述文本的样式 */
+    .info {
+      color: #bdbdbd;
+      font-size: 0.8rem;
+      background-color: #3f51b5;
+      text-align: center;
+      /* padding如果只有两个值，分别是上下和左右 */
+      padding: 0。2em 0em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 这里是头部菜单 -->
+  <header class="top-menu">
+    <a class="top-a" href="index.html">返回首页</a>
+  </header>
+
+
+  <!-- 网站主体部分 -->
+  <main>
+    <!-- 标题部分 -->
+    <section class="title">
+      <span class="title-text">后摇Mazzy</span>的网站
+    </section>
+    <!-- 简介部分 -->
+    <section class="info">
+      你当初干脆跟我说咱两玩玩，我还敬你几分坦诚 程序猿思维：小明下班路上，他老婆给他打电话，让他买十个包子，
+      如果遇到卖西瓜的，就买一个，结果小明带回来一个包子
+    </section>
+  </main>
+</body>
+<div>
+  <!-- 
+     audio是音频控件
+     autoplay表示自动播放（谷歌浏览器禁用了）
+     controls表示显示播放控制
+     loop表示循环播放
+     src是音乐文件地址
+  -->
+  <audio autoplay controls loop
+    src="https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=14&tbOssInfo.obid=1"></audio>
+
+    <!-- 
+      video是嵌入视频标记
+      src是视频文件的地址
+      controls是显示视频播放控制
+     -->
+
+    <video style="width: 1000px;" controls src="1.mp4"></video>
+</div>
+</audio>
+
+</html>

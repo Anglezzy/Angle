@@ -1,0 +1,42 @@
+/*
+ 动画入门01
+*/
+.ani01 {
+  border: 1px solid #ff0000;
+  font-size: 1rem;
+  /* 
+  第一种动画
+  tansition表示过渡动画
+  第一个参数是什么属性变化会引发动画
+  第二个参数是动画的时长
+  第三个参数可选，表示动画的速动曲线
+  tanstion: font-size 2s ease-in-out;
+  表示font-size属性变化是动画过渡，时长两2秒，速动是进出的时候动画慢速
+   */
+  transition: font-size 2s ease-in-out;
+  color: #000000;
+}
+
+.ani01:hover {
+  font-size: 2rem;
+  color: #0000ff;
+}
+
+.ani02 {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 0px #00ffff;
+  background-color: blueviolet;
+  /* all表示任意属性变化都是动画过渡 */
+  transition: all 2s;
+  color: #ffffff;
+}
+
+.ani02:hover {
+  width: 120px;
+  height: 120px;
+  background-color: pink;
+  box-shadow: 0px 0px 2rem #ff0000;
+
+
+}

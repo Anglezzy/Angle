@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>压力布局和边框</title>
+  <style>
+    body{
+      padding: 0px;
+      margin: 0px;
+    }
+
+  /* 块元素边框 */
+  .border01{
+    /* border是边框，第一个值是边框的宽度
+     第二个值是边框的线型 solid是单线条
+     第三个值是边框的颜色 
+     每个参数用空格分开
+    */
+
+  border:1px solid #ff0000
+}
+
+/* 同时有边框和内边距 */
+.border02{
+  padding: 1rem;
+  /* border可以分开成多个属性 border-color是边框颜色 */
+  border-color: #0000ff;
+  /* border-width是边框宽度 */
+  border-width: 1px;
+  /* border-style是边框的线型 */
+  border-style: dashed;
+}
+
+
+/* 边框圆角 */
+.border03{
+  border:1px solid #ff0000;
+  /* 圆角 border-radius 值是圆角的大小 */
+  border-radius: 10px;
+}
+
+/* 圆 */
+.circle{
+  /* 高宽要一样 */
+  width: 50px;
+  height: 50px;
+  border: 1px solid rebeccapurple;
+  border-radius: 50%;
+  /* 内容水平垂直居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 定制圆角的位置， 上端圆角 */
+.border04{
+  border:1px solid #ff0000;
+  /* border-top-left-radius表示上左方的圆角
+     top:上，left:左，right:右，bottom:下
+   */
+  border-top-left-radius: 10px;
+  /* border-top-left-radius表示上右方的圆角 */
+  border-top-right-radius: 10px;
+}
+
+/* 定制边框，上下不一样，左右没有 */
+.border05{
+  /* border-位置就是定制指定位置边框 */
+  border-top:2px solid #ff0000;
+  border-bottom:1px dotted #0000ff
+}
+
+/* 外边距，表示元素和外面的元素分开 margin
+ */
+ .margin01{
+   /* margin的四个参数和padding一样，是上右下左 */
+   margin: 1rem 2rem 3rem 4rem;
+ }
+  </style>
+</head>
+
+
+
+<body>
+<!-- 边框 -->
+<section class="border01">
+  带边框的块元素
+</section>
+  
+<section>
+  <span class="border01">非块级元素的边框</span>
+</section>
+
+<!-- 边框和内边距 -->
+<section class="border02">
+  <span class="border03">边框和内边距</span>
+</section>
+
+<!-- 圆 -->
+<section>
+  <div class="circle">圆</div>
+</section>
+
+<!-- 定制圆角 -->
+<section class="border04">
+  上端圆角
+</section>
+
+<!-- 定制边框 -->
+<section class="border05">
+  上下边框
+</section >
+
+<!-- 外边距 -->
+<section class="border01">
+  <!-- class里面可以套用多个样式，中间用空格分开
+       这样慧会让多个不同的样式同时生效
+   -->
+  
+  <div class="margin01 border01">1</div>
+  <div class="margin01 border01">2</div>
+  
+</section>
+</body>
+
+
+
+</html>

@@ -1,0 +1,92 @@
+/* sub03.css-sub03.html的样式 */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 直接写标记名称，表示所有该名称的元素都会套用样式 */
+header {
+  /* 
+  压力布局，会将它里面的第一级子元素压迫到一行
+  不论是否为块元素，而且默认情况下子元素的宽度就是里面的内容宽度
+   */
+  display: flex;
+  /* justify-content是压力布局特有的属性，表示子元素的水平对齐方式
+      space-betwee:表示如果子元素无法填满一行，会将多余的空白
+      平均分配到子元素的中间，也就是分散对齐
+    */
+  justify-content: space-between;
+}
+
+/* 一级子元素选择器 >表示对应的一级子元素套用样式
+  header>section表示header里面第一级的section套用
+*/
+header>section {
+  border: 1px solid #ff0000;
+}
+
+/* 左中右布局 */
+.lcr {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* lcr>div表示class="lcr"的元素里面的第一级div套用样式 */
+.lcr>div {
+  border: 1px solid #0000ff;
+}
+
+/* 分散对齐 */
+.fsdq {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fsdq>div {
+  border: 1px solid #00ff00;
+
+}
+
+/* 多行对其菜单 */
+.menu {
+  display: flex;
+}
+
+.menu>div {
+  border: 1px solid #acac00;
+}
+
+/* 指定压力布局里面的子元素强压值 */
+.menu01 {
+  flex: 1;
+}
+
+/* 
+压力布局和压强
+flex是设置压强值，需要父元素（容器）是压力布局
+第一种情况，有的给了flex值，有的没有，没有的会被压到最小，
+有的会被填满剩余的空间
+第二种情况，全部都有flex值，那么会根据值来分配空间
+例如flex=1的只有flex=3的三分之一宽
+又例如只有两个子元素，flex分别为4，6，那么空间会是4，6分
+3，3，8，8 24
+*/
+.myflex {
+  display: flex;
+}
+
+.flex01 {
+  flex: 1;
+}
+
+.flex02 {
+  flex: 2;
+}
+
+.flex03 {
+  flex: 3;
+}
+
+.myflex> div {
+  border: 1px solid #00ac00;
+}

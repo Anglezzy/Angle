@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>压力布局2</title>
+  <link rel="stylesheet" href="sub05.css">
+</head>
+
+<body>
+  <section class="tc">
+    <div class="border01">文本居中</div>
+  </section>
+
+  <section class="fc">
+    <div class="border01">压力盒子居中</div>
+
+  </section>
+
+  <section class="tc">
+    <div class="border01">1</div>
+    <div class="border01">2</div>
+
+  </section>
+
+  <!-- 
+    压力盒子会对子元素进行压紧处理，然后再做对齐
+    所以下面的两个块元素被压到一行，然后居中对齐
+   -->
+  <section class="fc">
+    <div class="border01">1</div>
+    <div class="border01">2</div>
+  </section>
+  <!-- 
+  压力盒子只会对一级子元素做处理
+  所以下面的第二级子元素里面两个div还是保持了换行的特征
+ -->
+  <section class="fc">
+    <div class="border01">
+      <div class="border01">1</div>
+      <div class="border01">2</div>
+    </div>
+  </section>
+
+  <section class="fc">
+    <div class="border01">
+      左边的是单行
+    </div>
+    <div class="border01">
+      <div>第一行</div>
+      <div>第二行</div>
+      <div>第三行</div>
+    </div>
+  </section>
+
+  <!-- 垂直居中 -->
+  <section class="vc">
+    <div class="border01">
+      <div>1</div>
+      <div>2</div>
+    </div>
+    <div class="border01">
+      <div>1</div>
+    </div>
+    <div class="border01">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </section>
+
+  <section class="flex-warp01">
+    <div>有宽度的div1</div>
+    <div>有宽度的div2</div>
+    <div>有宽度的div3</div>
+    <div>有宽度的div4</div>
+    <div>有宽度的div5</div>
+    <div>有宽度的div6</div>
+  </section>
+
+</body>
+
+</html>
