@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+  <header style="text-align: right;">
+    <a href="index.html">返回目录</a>
+    <br>
+  </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>佐助</title>
+  <style>
+    body {
+      background-image: url(palace.jpg);
+      background-size: cover;
+    }
+
+    .fs01 {
+      /*字体大小，单位是像素*/
+      font-size: 20px;
+    }
+
+    .fs02 {
+      font-size: 72px;
+    }
+
+    .fs03 {
+      /*相对单位em，表示容器大小字体的倍数*/
+      font-size: 1.5em;
+    }
+
+    .fs04 {
+      font-size: 2em;
+    }
+
+    .fs05 {
+      /*浏览器基准字体大小的倍数，绝对是单位*/
+      font-size: 2rem;
+    }
+
+    .fs06 {
+      font-size: 1.5rem;
+    }
+
+    /*大小单位:
+       px像素，绝对单位
+       em容器倍数，相对单位
+       rem浏览器基准倍数，绝对单位，css3带来的新单位，好用大小单位适应于任何需要大小的地方，不单单是字体大小高宽，
+       间距，缩减，边框都可以使用
+       作业1：文本为：1234567，但是要求每一个数字都有不同的颜色，且每一个数字都比前一个数字大，且数字之间不能有间距
+       */
+
+    /* a标记自带下划线，且颜色不受容器影响，所以需要单独设置样式*/
+
+    /* 
+       css选择器2，标签选择器
+       标记名称{ 样式 }表示所有对应标记都会套用效果！
+       例如 div { font-size：2rem }表示所有的div都会是2rem的字体大小！!
+        */
+    a {
+      /*
+          text-decoration是文本修饰，none表示没有任何修饰
+
+          */
+      text-decoration: none;
+      color: #000000;
+      font-size: 1rem;
+      /* transition: font-size 1s; */
+    }
+
+    /* ：hover表示选择器对应的元素鼠标悬停时候的样式（：是伪类）*/
+    a:hover {
+      /*underline是下划线 */
+      text-decoration: underline;
+      color: #0000ff;
+      font-size: 1.2rem
+    }
+
+/*     
+        本周作业
+        创建自己名字拼音的目录
+        里面带有index: html
+        内容为自己的个人简介
+        必须包含以下知识点：颜色，字体大小，超链接，背景图或者照片 */
+  </style>
+
+  </heard>
+
+  <body>
+    <section>
+      <h1>字体大小</h1>
+      <span>标准字体大小</span>
+      <span class="fs01">像素值1</span>
+      <span class="fs02">可以超出html标准字体大小</span>
+      <hr>
+      <div>
+        <div>标准字体大小</div>
+        <div class="fs03">容器大小倍数</div>
+        <div class="fs04">倍数2</div>
+        <div class="fs04">
+          em是容器大小倍数，所以是相对大小
+          <span class="fs03">这个会变大，因为容器字体变大</span>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <div>标准字体大小</div>
+        <div class="fs05">基准字体倍数</div>
+        <div class="fs06">基准倍数2</div>
+        <div class="fs05">
+          rem不受容器影响
+          <div class="fs06">还是基准字体倍数</div>
+        </div>
+
+      </div>
+      <hr>
+      <div>
+        a标记的特别样式处理
+        <a href="#">超链接1</a>
+        <a href="#">超链接2</a>
+        <a href="#">超链接3</a>
+      </div> 
+
+    </section>
+
+  </body>
+
+</html>

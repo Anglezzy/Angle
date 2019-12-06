@@ -1,0 +1,166 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.dibu {
+  text-align: center;
+  background-color: #d6dfea;
+  font-size: 0.8em;
+}
+
+.info {
+  color: #b6b6b6;
+  /* 15973637383 */
+}
+
+a {
+  text-decoration: none;
+  color: #1d5494
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 
+  头部样式设置，头部的两个区块要左右分散
+  */
+header {
+  /* 左右布局*/
+  display: flex;
+  justify-content: space-between;
+
+  /* 背景颜色 */
+  background-color: #eff4fa;
+  /* 下边框 */
+  border-bottom: 1px solid #d6dfea;
+  /* 内边距 */
+  padding: 1rem 2rem;
+  /* align-items表示压力布局中的子元素的垂直对齐方式，center是居中 */
+  align-items: center;
+  /* 字体颜色 */
+  color: #b6b6b6;
+  /* 字体大小 */
+  font-size: 0.8em;
+}
+
+
+
+/* 固定位置定位 */
+footer {
+  /* 固定在最下方 */
+  position: fixed;
+  bottom: 0px;
+  /* fixed定位会丢失宽度，需要指定宽度 */
+  width: 100%
+}
+
+/* 中间区域是左右两块，都是整体居中 */
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+/* 中间区域左边模块样式 */
+.main-left {
+  margin-right: 4rem;
+}
+
+/* 中间区域右边框 */
+.main-right {
+  border: 1px solid #a0b1c4;
+  border-radius: 2px;
+}
+
+/* 右边第一行 */
+.main-right01 {
+  display: flex;
+  background-color: #f9fbfe;
+  /* 压力布局水平对齐方法，space-around
+  表示把空白区域平均分配到子元素的两边 
+  */
+  justify-content: space-around;
+  padding: 0.5rem 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* 右边登录框大块 */
+.main-right-login {
+  border-top: 1px solid #a0b1c4;
+  padding: 2rem;
+}
+
+/* 输入框效果 */
+.myinput {
+  border: 1px solid #96a5b4;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+/* class为myinput里面的第一级的input元素效果 */
+.myinput>input {
+  /* 去掉input的外框 */
+  outline: none;
+  border-width: 0px;
+  width: 200px;
+}
+
+/*
+   :focus-within 伪类，表示该元素里面任意元素获取到焦点时
+ */
+.myinput:focus-within {
+  border-color: #4892e7;
+  /*
+    box-shadow表示阴影
+    前三个参数分别是x，y,z轴的阴影距离
+    第四个参数是阴影颜色
+    注意，一般给xy轴就是阴影，给z轴就是外发光，一般不会同时使用
+  */
+  /* box-shadow: 0px 0px 4px #0000ff; */
+}
+
+/* 下方的外边距 */
+.bottom-margin {
+  margin: 0px 0px 8px 0px;
+}
+
+/* 登录按钮 */
+.login-button {
+  background-color: #5a98de;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  /* 鼠标指针变成手点击 */
+  cursor: pointer;
+}
+
+.login-button:hover{
+  background-color: #6ba9ef;
+}
+
+/* 扫码登录 */
+.qrcode {
+  color: #225592;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* 忘了密码 */
+.wlmm {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.wlmm a {
+  color: #225592;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.wlmm a:hover {
+  text-decoration: underline;
+}
