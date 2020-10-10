@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单元素-带value的</title>
+</head>
+
+<body>
+  <form action="#" onsubmit="return false;">
+    <label>
+      请输入密码:
+      <input type="password" id="txtPwd" placeholder="密码">
+    </label>
+    <!-- 让文字也有输入效果lable -->
+    <label>
+      <input type="radio" id="rdoYue" value="yue" name="mode">月卡
+    </label>
+    <label>
+      <input type="radio" id="rdoNian" value="nian" name="mode">年卡
+    </label>
+    <label>
+      <input type="radio" id="rdoYJ" value="yj" name="mode">永久
+    </label>
+
+    <div>
+      <label>
+        <input type="checkbox" id="chkShow">显示协议
+      </label>
+      <span id="spShow" style="display: none;">旅途永无止境...</span>
+    </div>
+
+    <button id="btnOk">确定</button>
+    <!-- 
+      input type = reset是按钮，value是按钮文本，只有放在form中会有重置form中所有表单元素到初始值的作用
+     -->
+    <input type="reset" value="重置">
+  </form>
+
+  <div id="divInfo"></div>
+  <script src="h0004.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+#div01 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+#div01 > div {
+  margin: 2px;
+  padding: 5px;
+}
+
+.class01 {
+  border: 1px solid #ffff00;
+  margin: 1rem;
+  padding: 1rem;
+}
+.class02 {
+  border-radius: 1rem;
+}

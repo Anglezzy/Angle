@@ -1,0 +1,31 @@
+body {
+  background-color: #f3b3b3;
+  color: #ffff00;
+}
+
+.zy01 span {
+  background-color: #f3b3b3;
+  color: #ffff00;
+  border: 1px solid #ffffff;
+}
+
+.zy01 div {
+  background-color: #f3b3b3;
+  color: #ffff00
+}
+
+.zy02 {
+  background-color: #043312;
+  color: #0a801e;
+}
+
+.zy02 span {
+  background-color: #043312;
+  color: #0a801e;
+  border: 1px solid #ff0000;
+}
+
+.zy02 div {
+  background-color: #043312;
+  color: #0a801e;
+}

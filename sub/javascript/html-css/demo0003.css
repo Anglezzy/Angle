@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+}
+/* 响应式布局 */
+.block01 {
+  display: flex;
+  /* 允许超过总宽度就换行 */
+  flex-wrap: wrap;
+}
+
+.block01 > div {
+  width: 25%;
+}
+/* 1366 媒体查询 */
+/* 当屏幕宽度小于768px的时候套用样式 */
+/* 当屏幕里的像素小于767 括号里的元素生效 */
+@media screen and (max-width:767px) {
+  /* 手机屏判断 */
+  .block01 > div {
+    width: 100%;
+  }
+}
+/* 768px-991px */
+/* 不小于768 和 不大于991生效 */
+@media screen and (min-width:768px) and (max-width:991px) {
+  .block01 > div {
+    width: 50%;
+  }
+}
+/* 992px-1199px */ 
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .block01 > div {
+    width: 33.33333%;
+  }
+}
+
+/* 手机桌面css切换 */
+.desktop {
+  /* 桌面版本样式 */
+  display: flex;
+  /* 空白区域平均分配*/
+  justify-content: space-evenly;
+}
+.phone {
+  /* 手机版本样式 */
+  display: flex;
+  /* 分散对齐 */
+  justify-content: space-between;
+}
+.desktop,
+.phone {
+ display: none;
+ /* visibility: hidden */
+}
+
+@media screen and (max-width:767px) {
+  .phone {
+    display: flex;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .desktop {
+    display: flex;
+  }
+}
+
+#desktop,
+#phone {
+  display: none;
+}
+
+
+
+
+
+
+

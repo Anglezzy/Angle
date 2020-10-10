@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>样式变幻</title>
+  <link rel="stylesheet" href="zhengzhiyong02.css">
+</head>
+
+<body id="sec">
+  <section class="sn01" style="text-align: right;">
+    <span id="but01">白天模式</span>
+    <span id="but02">夜晚模式</span>
+  </section>
+  <div>
+    <h3> JavaScript（缩写为JS）是一种高级的、多范式、解释型的编程语言，是一门基于原型、函数先行的语言，它支持面向对象编程、命令式编程以及函数式编程。
+      它提供语法来操控文本、数组、日期以及正则表达式，不支持I/O（比如网络、存储和图形等），但可以由它的宿主环境提供支持。
+      它已经由ECMA（欧洲计算机制造商协会）通过ECMAScript实现语言的标准化。它被世界上的绝大多数网站所使用，也被世界主流浏览器支持。</h3>
+  </div>
+
+
+</body>
+
+<script>
+  document.getElementById('but01').addEventListener('click', function() {
+  document.getElementById('sec').setAttribute('class', 'zy01');
+});
+document.getElementById('but02').addEventListener('click', function() {
+  document.getElementById('sec').setAttribute('class', 'zy02');
+});
+</script>
+
+</html>

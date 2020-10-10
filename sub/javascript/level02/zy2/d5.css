@@ -1,0 +1,32 @@
+/* #id 表示id对应的元素的样式 */
+#ani-div {
+  width: 200px;
+  height: 200px;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+/* 选择器1，选择器2 表示两个选择器同时生效（A or B） */
+#sp01,
+#sp02,
+#sp03 {
+  display: inline-block;
+  border: 1px solid #ff00ff;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+/* 自定义动画 */
+@keyframes myani {
+  0% {
+    background-color: #ff0000;
+  }
+  50% {
+    background-color: #000000;
+  }
+}
+
+.myani {
+  animation: myani 2s;
+}

@@ -1,0 +1,26 @@
+.form-input {
+  border: 1px solid #bcbcbc;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.form-input input {
+  border-color: transparent;
+  outline: none;
+}
+
+/* :focus-within表示里面有元素是带焦点的 */
+.form-input:focus-within {
+  border-color: #00bcff;
+}
+
+/* .a.b多个类选择器中间没有空格表示同时套用了两个类的元素 */
+/* .error.form-input表示class="form-input error ..." */
+.error.form-input {
+  border-color: #ff0000;
+}
+
+/* class="form-input error ..."且有焦点:focus-within */
+.form-input:focus-within.error {
+  border-color: #ff0000;
+}

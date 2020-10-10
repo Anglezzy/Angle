@@ -1,0 +1,154 @@
+/* body的样式 */
+body {
+  /* 去掉留白 */
+  margin: 0px;
+  padding: 0px;
+  /* 
+  去掉滚动条， 这样页面就变成了全屏这样子，没办法拖动显示
+  超出屏幕内容
+  */
+  overflow: hidden;
+}
+
+/* 导航样式 */
+nav {
+  /* 固定到下方 */
+
+  position: fixed;
+  bottom: 3rem;
+  width: 100%;
+  /* 内容居中 */
+  display: flex;
+  justify-content: center;
+}
+
+.navs span {
+  /* 导航文字的样式*/
+  display: inline-block;
+  padding: 0.5rem 2rem;
+}
+
+.navs span:hover {
+  /* 导航的鼠标悬停效果 */
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.navs {
+  position: relative;
+}
+
+.bar {
+  /* 通过宽度和背景颜色制造下划线效果 */
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 33.33333%;
+  /* 位置 */
+  position: absolute;
+  left: 0%;
+  /* 过渡动画 left属性变化要1s的过渡效果 */
+  transition: left 0.5s;
+}
+
+/* 全屏的页面样式 */
+.pages {
+  position: relative;
+  /* 高度设置为全屏 vh是浏览器可视区域百分比 */
+  height: 100vh;
+}
+
+/* 第一个全屏页面  #是id选择器 #page01表示id="page01"的元素套用 */
+#page01 {
+  /* 背景图片 */
+  background-image: url(风景.jpg);
+  background-size: cover;
+  /* 位置和高宽 */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#page02 {
+  background-image: url(宇航员.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#page03 {
+  background-image: url(火车.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+/* 从左边移动出去的动画 */
+@keyframes move-out {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+/* 移动出去的class */
+.move-out {
+  animation: move-out 1s;
+  /* !important 表示强制样式生效 */
+  left: -100% !important;
+}
+
+/* 从右边进来的动画 */
+@keyframes move-in {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.move-in {
+  animation: move-in 1s;
+  left: 0% !important;
+}
+
+@keyframes move-out-right {
+
+  /* 从右边出去 */
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.move-out-right {
+  animation: move-out-right 1s;
+  left: 100% !important;
+}
+
+@keyframes move-in-right {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.move-in-right {
+  animation: move-in-right 1s;
+  left: 0% !important;
+}

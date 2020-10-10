@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 2px;
+  padding: 0.2rem 1rem;
+  border: 1px solid #0000ac;
+  border-radius: 0.2rem;
+  color: #ffffff;
+}
+
+.btn-primary {
+  border: 1px solid #0000ac;
+  background-color: #0000ac;
+}
+
+.btn-danger {
+  border: 1px solid #ac0000;
+  background-color: #ac0000;
+}
+
+.btn-disable {
+  border: 1px solid #999999;
+  background-color: #acacac;
+}
+
+/* css技巧可以简化js的代码数 */
+.myinput>div:first-child {
+  border: 1px solid #999999;
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem;
+  width: 200px;
+}
+.myinput input {
+  border-width: 0px;
+  outline: none;
+  width: 100%;
+}
+.myinput > div:last-child {
+  font-size: 0.8em;
+  padding: 2px;
+  color: transparent;
+}
+
+/* 错误提示版本 */
+.myinput.error > div:first-child {
+  border-color: #ff0000;
+}
+.myinput.error > div:last-child {
+  color: #ff0000;
+}

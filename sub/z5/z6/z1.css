@@ -1,0 +1,263 @@
+body {
+  font-weight: 100;
+}
+
+.a10 {
+  background-color: #1E314F;
+  color: #eee;
+}
+
+.a5 {
+  background-color: #eee;
+  color: #000;
+}
+
+.a1 {
+  color: #eee;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-bottom: 50px;
+  margin: 0px 20px;
+
+}
+
+.a2 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-bottom: 50px;
+  margin: 0px 20px;
+}
+
+.a3 {
+  display: inline-block;
+  background-color: rgba(134, 187, 255, 0.7);
+  padding: 18px 40px;
+  border-radius: 20px;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+
+}
+
+.a4 {
+  background-color: #ffbc04;
+  box-shadow: 0px 0px 5px #ffbb00;
+  padding: 13px;
+  border: 2px solid #ffd04f;
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+.a8 {
+  background-color: rgb(248, 234, 190);
+  box-shadow: 0px 0px 5px #eee;
+  padding: 15px;
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+}
+
+.a9 {
+  display: inline-block;
+  background-color: rgba(7, 83, 131, 0.7);
+  padding: 18px 40px;
+  border-radius: 20px;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+}
+
+.a6 {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  padding: 0px 50px 0px 0px;
+  z-index: 2;
+}
+
+.a7 {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 120px;
+  cursor: pointer;
+  padding: 0px 0px 0px 50px;
+}
+
+.a11 {
+  margin-right: 40px;
+}
+
+.a12 {
+  text-align: right;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-top: 20px;
+  position: fixed;
+  right: 20px;
+}
+
+.a13 {
+  position: absolute;
+  left: 100px;
+  top: 130px;
+  z-index: 2;
+}
+
+.a14 {
+  background-color: #2c2c2c4b;
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  left: 110px;
+  top: 121px;
+  z-index: 1;
+}
+
+.a15 {
+  background-color: #0000001c;
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  left: 119px;
+  top: 112px;
+}
+
+.a16 {
+  background-color: #eeeeee1c;
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  left: 110px;
+  top: 121px;
+  z-index: 1;
+}
+
+.a17 {
+  background-color: #f1f1f13f;
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  left: 119px;
+  top: 112px;
+}
+
+.a18 {
+  display: flex;
+  justify-content: center;
+}
+
+.a19 {
+  margin-top: 150px;
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+}
+
+.a20 {
+  position: fixed;
+  left: 700px;
+}
+
+.a21 {
+  font-size: 1.1rem;
+  width: 33em;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1691404 */
+  src: url('//at.alicdn.com/t/font_1691404_26z0hgzurlc.eot');
+  src: url('//at.alicdn.com/t/font_1691404_26z0hgzurlc.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1691404_26z0hgzurlc.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1691404_26z0hgzurlc.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1691404_26z0hgzurlc.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1691404_26z0hgzurlc.svg#iconfont') format('svg');
+}
+
+.a19 i {
+  color: pink;
+}
+
+.a22 {
+  animation: donghua 1s infinite;
+}
+
+@keyframes donghua {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.a23 {
+  font-size: 1.5rem;
+  position: fixed;
+  right: 250px;
+  bottom: 130px;
+}
+
+.a23 span {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.a23 i {
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.a23 i:hover {
+  color: #0386d1;
+}
+.a25 i{
+  color: #b93e3e;
+  animation: donghua1 0.3s;
+}
+.a25 i:hover {
+  color: #b93e3e;
+}
+
+.a26 i:hover {
+  color: #b93e3e;
+}
+
+.a24  {
+  color: #b93e3e;
+  
+  
+}
+
+@keyframes donghua1 {
+  0% {
+    font-size: 1.2rem;
+  }
+
+  50% {
+    font-size: 1.8rem;
+  }
+
+  100% {
+    font-size: 1.5rem;
+  }
+}

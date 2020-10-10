@@ -1,0 +1,30 @@
+/* 居中 */
+.tc {
+  text-align: center;
+}
+
+/* 图片容器 */
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+/* 图片统一高度 */
+.images img {
+  height: 10rem;
+}
+
+/* 支持按钮样式 */
+#btnJoin {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: 0.1rem;
+  border: 0.1rem solid #ff0000;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#btnJoin:hover {
+ background-color: rgba(255, 0, 0,0.3);
+}

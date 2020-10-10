@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>点击计数的</title>
+  <link rel="stylesheet" href="zhengzhiyong.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="main-right zy01">
+        <div id="divInfo01">点击计数</div>
+      </div>
+      <div class="main-left zy02">
+        <div id="divInfo02"></div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+<script>
+  var count = 0;
+  document.getElementById('divInfo02').innerHTML = count;
+  document.getElementById('divInfo01').addEventListener('click', function () {
+    count = count + 1;
+    document.getElementById('divInfo02').innerHTML = count;
+  })
+</script>
+
+</html>

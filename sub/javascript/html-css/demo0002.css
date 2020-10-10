@@ -1,0 +1,38 @@
+#div01 {
+  background-color: #ff0000;
+}
+
+#div02 {
+  background-color: #0000ff;
+}
+
+#div03 {
+  background-color: #00ffff;
+}
+
+.line01 {
+  display: flex;
+}
+
+.line01 > div {
+  /* 压力布局压缩在一行 */
+  flex: 1;
+}
+
+.line02 > div {
+  height: 0.5rem;
+  background-color: #ffff00;
+  width: 33.33333%;
+  /* 0% 初始位置 100% 移动一格 以此类推*/
+  transform: translateX(0%);
+  transition: transform 1s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container > section {
+  width: 600px;
+  padding: 2rem;
+}

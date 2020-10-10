@@ -1,0 +1,31 @@
+#ani-div {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  color: #ffffff;
+}
+
+#z01,
+#z02,
+#z03,
+#z04,
+#z05 {
+  display: inline-block;
+  border: 1px solid #ff00ff;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+@keyframes myani {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: #000000;
+  }
+}
+
+.myani {
+  animation: myani 2s;
+}

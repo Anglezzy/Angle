@@ -1,0 +1,109 @@
+body {
+  background-image: url('3.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  height: 390px;
+  width: 390px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 100;
+
+}
+
+.a1 {
+  font-size: 1.5rem;
+  margin: 20px 0px;
+}
+
+.a2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 1.5px;
+  margin: 0px 7px;
+
+}
+
+input {
+  outline: none;
+  border-width: 0px;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.a3 {
+  display: inline-block;
+  padding: 5px 25px 5px 15px;
+  border: 1px solid #0000004b;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.a3:focus-within {
+  border-color: rgba(204, 204, 204, 0.178);
+  box-shadow: 0px 0px 4px rgba(238, 238, 238, 0.616);
+  transition: all 0.5s ease-in-out;
+}
+
+.a4 {
+  margin-left: 20px;
+}
+
+button {
+  outline: none;
+  border-width: 0px;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.555);
+  cursor: pointer;
+}
+
+.a5 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.a6 {
+  border: 1px solid #0000004b;
+  padding: 8px 25px;
+  border-radius: 5px;
+
+}
+
+.a6:hover {
+  background-color: #0000001a;
+}
+
+.a7 {
+  position: absolute;
+  top: 250px;
+  font-weight: 100;
+  color: #fff;
+
+}
+.a8 {
+  position: absolute;
+  top: 315px;
+  font-weight: 100;
+  color: #fff;
+
+}
+.a9 {
+  position: absolute;
+  top: 380px;
+  font-weight: 100;
+  color: #fff;
+
+}
+.a10{
+  position: absolute;
+  bottom:150px;
+  font-weight: 100;
+  color: #000;
+  font-size: 1.2rem;
+}

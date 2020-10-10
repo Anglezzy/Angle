@@ -1,0 +1,117 @@
+body {
+  background: #ededed;
+  color: #181818;
+}
+
+header {
+  /* 粗体 */
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* 固定在上方 */
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 10;
+  background-color: #ededed;
+}
+
+header>div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0.5rem;
+}
+
+.mr {
+  margin-right: 1rem;
+}
+
+main {
+  /* fixed定位会挡住相邻的元素，需要调整兼具避开 */
+  margin-top: 2.6rem;
+  background-color: #ffffff;
+  margin-bottom: 1.6rem
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0x;
+  z-index: 10;
+  background-color: #ededed;
+}
+
+footer>div {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0px;
+  border-top: 1px solid #dcdcdc;
+
+}
+
+/* 
+选择器1 选择器2
+选择器中间有空格，表示里面的元素
+例如： footer div{}
+表示只要时在footer里面的div，不论是多少层级都会生效
+不同于>号只能有一级
+*/
+footer .iconfont {
+  font: size 2rem;
+
+}
+
+.active-icon {
+  /* 激活的图标 */
+  color: #08c261
+}
+
+
+/* 主区域聊天样式 */
+main>section {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+
+/* 左边是方块大小的图片，用icon调整字体大小模拟 */
+.logo {
+  font-size: 3.5rem
+}
+
+/* 右边聊天区域 */
+.main-raght {
+  border-bottom: 1px solid #dcdcdc
+}
+
+.main-padding {
+  padding: 0.2rem;
+}
+
+.main-right>div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0px;
+}
+
+/* 辅助文本样式 */
+.second-text {
+  color: #999999;
+  font-size: 0.8em;
+}
+
+
+
+
+
+.is {
+  font-size: 1.5rem;
+}
+
+.ml {
+  margin-left: 1.2rem;
+
+}

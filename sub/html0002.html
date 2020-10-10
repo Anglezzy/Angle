@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>后摇羊羊的网站</title>
+</head>
+<body>
+    <header style="text-align: right;">
+        <a href="index.html">返回目录</a>
+        <br>
+      </header>
+
+  <!--段落，每个段落之间会换一行 p -->
+<p>
+  你当初干脆跟我说咱两玩玩，我还敬你几分坦诚
+</p>
+<p>
+  程序猿思维：小明下班路上，他老婆给他打电话，让他买十个包子，
+  如果遇到卖西瓜的，就买一个，结果小明带回来一个包子
+</p>
+<p>
+  <!-- 上标，下标 sup，sub -->
+  小明<sub>注1</sub>是中国著名人士<br>
+  X<sup>2</sup>+Y<sup>2</sup>=Z<sup>2</sup>
+</p>
+<p>
+  <!--本身的效果会被css替代所以直接用的很少的标记
+    但是是单字标记，经常用于css玩效果
+    i,b,u
+  -->
+  <i >斜体</i><b>粗体</b><u>下划线</u>
+  <del>删除线</del><kbd>按键</kbd>
+</p>
+</body>
+<p>
+  <!--
+    转义字符，有些特殊的字符不能正常显示，需要一组其他的字符替代
+    例如空格，在html中会被合并成一个，如果要显示多个就需要转义
+    又比如<>是标记界定符号，也不能很好的显示
+  -->
+多个 &nbsp;&nbsp;&nbsp;&nbsp;空格
+&lt;br&gt; &quot; &reg; &copy; &amp;
+</p>
+<p>样式入门，文字对齐方式
+  <!-- style属性可以定义样式，是最简单直白的设置元素样式的方式 
+  
+  -->
+ <h1 style="text-align: left;">靠左</h1>
+ <h1 style="text-align: center;">靠中</h1>
+ <h1 style="text-align: right;">靠右</h1>
+
+</p>
+</html>
+<style>
+    .tc {
+      text-align: center;
+      color: black;
+    } 
+    body{
+      background-image: url(男.jpg);
+      background-size: cover;
+    }
+    a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+  </style>

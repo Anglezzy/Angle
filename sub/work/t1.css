@@ -1,0 +1,128 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+}
+
+.bg01 {
+  background-color: #ff0000;
+
+
+}
+
+.bg02 {
+  background-color: #25eb25;
+
+
+}
+
+.bg03 {
+  background-color: #00acac;
+
+
+}
+
+.bg04 {
+  background-color: #ac00ac;
+
+
+}
+
+/* 压力布局 */
+.flex-box {
+  display: flex;
+
+}
+
+/* 水平对齐的压力布局 */
+.flex-hbox01 {
+  display: flex;
+  /* 分散对齐 */
+  justify-content: space-between;
+}
+
+.flex-hbox02 {
+  display: flex;
+  /* 居中对齐 */
+  justify-content: center;
+}
+
+.flex-hbox03 {
+  display: flex;
+  /* 空白平均分配到每个子元素的两侧 */
+  justify-content: space-around;
+}
+
+.flex-hbox04 {
+  display: flex;
+  /* 空白平均分配 */
+  justify-content: space-evenly;
+}
+
+/* 不要留白的压力值 */
+.flex01 {
+  /* 压力值只有父元素是压力布局的时候有效 */
+  flex: 1;
+}
+
+.flex02 {
+  /* 都给压力值,值大的分配空间也越大 */
+  flex: 3;
+}
+
+/* 宽度和换行 */
+.flex-wbox {
+  display: flex;
+  /* 超过宽度允许换行 */
+  flex-wrap: wrap;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w33 {
+  width: 33.3333333%;
+}
+
+/* 压力布局交叉轴的对齐，垂直对齐 */
+.flex-vbox01 {
+  display: flex;
+  /* 
+  没有交叉轴对齐的时候，子元素的高度是填满父元素
+  有了交叉轴对齐，就是做垂直对齐
+  只有子元素高度不一致才有意义
+  */
+  align-items: center;
+}
+
+.flex-vbox01>div {
+  flex: 1;
+}
+
+.h1 {
+  height: 2em;
+}
+
+.h2 {
+  height: 5em;
+}
+
+.flex-vbox02 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.myflex {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myflex>div {
+  height: 100px;
+
+}
+
+/* 组合的布局 */

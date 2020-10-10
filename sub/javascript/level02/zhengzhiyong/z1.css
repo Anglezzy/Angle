@@ -1,0 +1,154 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navs span {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+}
+
+.navs span:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.navs {
+  position: relative;
+}
+
+.bar {
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 20%;
+  position: absolute;
+  left: 0%;
+  transition: left 0.5s;
+}
+
+.pages {
+  position: relative;
+  height: 100vh;
+}
+
+#tup01 {
+  background-image: url(1.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#tup02 {
+  background-image: url(2.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#tup03 {
+  background-image: url(3.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#tup04 {
+  background-image: url(4.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#tup05 {
+  background-image: url(5.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+
+
+/* 从左边移动出去的动画 */
+@keyframes move-out {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+/* 移动出去的class */
+.move-out {
+  animation: move-out 1s;
+  /* !important 表示强制样式生效 */
+  left: -100% !important;
+}
+
+/* 从右边进来的动画 */
+@keyframes move-in {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.move-in {
+  animation: move-in 1s;
+  left: 0% !important;
+}
+
+@keyframes move-out-right {
+
+  /* 从右边出去 */
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.move-out-right {
+  animation: move-out-right 1s;
+  left: 100% !important;
+}
+
+@keyframes move-in-right {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.move-in-right {
+  animation: move-in-right 1s;
+  left: 0% !important;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>压力布局复习</title>
+  <link rel="stylesheet" href="t1.css">
+</head>
+
+<body>
+  <section>
+    <div class="bg01">没有压力</div>
+    <div class="bg02">布局对照组</div>
+    <div class="bg03">块元素默认是占满一行的，不管内容多宽</div>
+  </section>
+
+  <section class="flex-box">
+    <div class="bg01">压力盒子</div>
+    <div class="bg02">有布局效果</div>
+    <div class="bg03">块元素也会被压缩到一行上</div>
+  </section>
+
+  <section class="flex-box">
+    <div>
+      <div class="bg01">压力只会对一级的子元素生效</div>
+      <div class="bg02">布局和内容没有关系</div>
+    </div>
+    <div class="bg03">
+      布局不管内容是什么，多少行
+    </div>
+  </section>
+
+  <section class="flex-hbox01">
+    <div class="bg01"> 压力布局就是水平对齐</div>
+    <div class="bg02">其实就是子元素宽度总和没有超过总宽度</div>
+    <div class="bg03">那么怎么分配空白区域</div>
+  </section>
+
+  <section class="flex-hbox02">
+    <div class="bg01">1</div>
+    <div class="bg02">2</div>
+    <div class="bg03">3</div>
+  </section>
+
+  <section class="flex-hbox03">
+    <div class="bg01">1</div>
+    <div class="bg02">2</div>
+    <div class="bg03">3</div>
+  </section>
+
+  <section class="flex-hbox04">
+    <div class="bg01">1</div>
+    <div class="bg02">2</div>
+    <div class="bg03">3</div>
+  </section>
+
+  <section class="flex-box">
+    <div class="bg01">1</div>
+    <div class="bg02 flex01">2</div>
+    <div class="bg03">3</div>
+  </section>
+
+  <section class="flex-box">
+    <div class="bg01">1</div>
+    <div class="bg02 flex01">2</div>
+    <div class="bg03 flex02">3</div>
+  </section>
+
+  <section class="flex-wbox">
+    <div class="bg01 w40">1</div>
+    <div class="bg02 w40">2</div>
+    <div class="bg03 w40">3</div>
+  </section>
+
+  <section class="flex-wbox">
+    <div class="bg01 w33">1</div>
+    <div class="bg02 w33">2</div>
+    <div class="bg03 w33">3</div>
+  </section>
+
+  <section class="flex-vbox01">
+    <div class="bg01 h1">高度不一致的子元素</div>
+    <div class="bg02">哈哈哈</div>
+    <div class="bg03 h2">嘻嘻嘻</div>
+  </section>
+
+  <section class="flex-vbox02">
+    <div class="bg01 h1">高度不一致的子元素</div>
+    <div class="bg02">哈哈哈</div>
+    <div class="bg03 h2">嘻嘻嘻</div>
+  </section>
+
+  <section class="bg01 myflex">
+    <div class="bg02">悬空(水平垂直居中)</div>
+  </section>
+
+  <!-- 微信我的界面最上方一行布局 -->
+  <hr>
+  <!-- 压力布局 -->
+  <section class="flex-box">
+    <div class="bg01">左边图标</div>
+    <!-- 这个是填满 -->
+    <div class="bg02 flex01">
+      <div>第一行名字</div>
+      <!-- 这个是分散对齐的压力布局 -->
+      <div class="flex-hbox01">
+        <div>左边微信号信息</div>
+        <div>zzy&gt;</div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+</body>
+
+</html>

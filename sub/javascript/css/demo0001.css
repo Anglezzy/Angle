@@ -1,0 +1,9 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+
+body {
+  /* css引用图片是相对与自己的，而不受引用它的html页面影响 */
+  background-image: url(../images/zR3.jpg);
+}

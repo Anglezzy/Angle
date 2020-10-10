@@ -1,0 +1,153 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 100;
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+  bottom: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav span {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+}
+
+.nav span:hover {
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.nav {
+  position: relative;
+}
+
+.bar {
+  background-color: whitesmoke;
+  height: 0.1rem;
+  width: 20%;
+  position: absolute;
+  left: 0%;
+  transition: left 0.7s;
+}
+
+.pages {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#page01 {
+  height: 100%;
+  background-image: url('郑.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+}
+
+#page02 {
+  height: 100%;
+  background-image: url('智.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#page03 {
+  height: 100%;
+  background-image: url('勇.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 200%;
+}
+
+#page04 {
+  height: 100%;
+  background-image: url('无.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 300%;
+}
+
+#page05 {
+  height: 100%;
+  background-image: url('敌.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 400%;
+}
+
+@keyframes move-out {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.move-out {
+  animation: move-out 1s;
+  left: -100% !important;
+}
+
+@keyframes in01 {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.in01 {
+  animation: in01 1s;
+  left: 0% !important;
+}
+
+@keyframes move-in {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.move-in {
+  animation: move-in 1s;
+  left: 0 !important;
+}
+
+@keyframes out01 {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.out01 {
+  animation: out01 1s;
+  left: 100% !important;
+}

@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.main-right {
+  border: 1px solid #ff0000;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.zy01 {
+  background-color: #ff0000;
+  background-color: cover;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.main-left {
+  border: 1px solid #ff0000;
+  border-radius: 100px;
+  background-color: #ffffff;
+}
+
+
+.zy02{
+  background-color: #ff0000;
+  background-color: cover;
+  color: #ffffff;
+  margin: 1rem;
+  padding: 0px;
+  font-size: 1.2rem;
+  padding: 4rem;
+  width: 50px;
+  height: 50px;
+}

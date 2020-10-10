@@ -1,0 +1,22 @@
+/* style01是黑白样式 */
+.style01 span {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.style01 a {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* style02是彩色的样式 */
+.style02 span {
+  background-color: #ff0000;
+  color: #ffff00;
+  border: 2px solid #aa0000;
+}
+
+.style02 a {
+  background-color: #ff0000;
+  color: #ffff00;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fpx nb</title>
+  <!-- 在head里面定义样式，style标记 -->
+  <style>
+    /*
+    样式选择器一 .样式名称 表示元素的class属性为样式名称的套用效果
+    例如，mycolor的效果是蓝底白字
+    那么所有 class="mycolor"的元素都是蓝底白字
+    */
+    .mycolor{
+      /* 样式的注释，background-color是背景颜色，取值方式和color一样 */
+    color:#ffffff;
+    background-color: #0000ff;
+    }
+    
+
+    .mybg {
+      /*设置宽度和背景图片 */
+      width: 300px;
+      background-image: url("img7.jpg");
+      /* 设置高度 height */
+      height: 200px;
+      /* 背景图片大小 (缩放方式) color表示尽快适应元素的大小*/
+      background-size: cover;
+    }
+
+    
+  </style>
+
+</head>
+
+<body>
+    <header style="text-align: right;">
+        <a href="index.html">返回目录</a>
+        <br>
+      </header>
+  <!-- 一个完全没有任何效果的非快级元素 span -->
+  span前面-<span>默认没有任何效果</span>-span后面
+  <!-- 没有任何效果的快级元素 div 但是快级元素默认宽度是容器的宽度  -->
+  <div>也没有任何效果</div>
+  div后面的元素也会另起一行
+  <!-- html5新定义的块级元素，和div一模一样，只是带来语义  -->
+  <header>header只是语义是头部，并不会有实际效果</header>
+  <main>main页面主体</main>
+  <footer>footer头脚步</footer>
+  <nav>nav导航栏</nav>
+  <menu>menu菜单栏</menu>
+  <section>section-div的替代品，区块</section>
+  <!-- 
+    css入门
+    第一种样式定义，行内，通过style属性定义，优先级最高！
+    css分为两个部分，样式名称：样式取值；每个样式通过；分隔的
+    颜色 color
+    取值，可以是颜色名称，例如red
+    可以是3个16进制数(0-f),分别代表rgb三原色的值red，green，blue
+    也可以是6个16进制数，每两个是一个三原色，这个最专业
+    最麻烦的是rgb，括号里面是0-255的三原色 
+   -->
+  <span style="color: red;">1</span>
+  <span style="color: #ff0;;">2</span>
+  <span style="color: #ff00ffff;;">3</span>
+  <span style="color: rgb(0,0,255);">4</span>
+  <span style="color: aqua;">5</span>
+  <span style="color: pink;">6</span>
+  <hr color="black">
+  <section class="mycolor">
+    <!-- 第二种样式设置方式，常用
+     -->
+    设置颜色！
+  </section>
+
+  <section class="mybg">
+    背景图片
+  </section>
+
+
+
+
+
+
+</html>
+<style>
+    .tc {
+      text-align: center;
+      color: black;
+    } 
+    body{
+      background-image: url(palace.jpg);
+      background-size: cover;
+    }
+    a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+  </style>

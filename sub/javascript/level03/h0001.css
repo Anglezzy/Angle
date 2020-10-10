@@ -1,0 +1,18 @@
+#div01 span {
+  color:#ff0000;
+  display: inline-block;
+  margin: 1rem;
+}
+.ani-div {
+  animation: ani-div 2s;
+  width: 100px;
+}
+
+@keyframes ani-div {
+  0%{
+    transform: translateX(100%) rotate(0deg);
+  }
+  100%{
+    transform: translateX(0%) rotate(720deg);
+  }
+}

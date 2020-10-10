@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+  background-image: url(童话.jpg);
+  background-size: cover;
+}
+
+
+.mydiv {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 5rem;
+  min-height: 100vh;
+}

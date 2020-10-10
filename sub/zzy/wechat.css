@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1552278 */
+  src: url('//at.alicdn.com/t/font_1552278_xau0ztdxb07.eot');
+  src: url('//at.alicdn.com/t/font_1552278_xau0ztdxb07.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1552278_xau0ztdxb07.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1552278_xau0ztdxb07.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1552278_xau0ztdxb07.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1552278_xau0ztdxb07.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+
+  padding: 0px;
+  margin: 0px;
+  background-color: #ededed;
+  color: #000;
+
+}
+
+footer {
+  position: fixed;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  width: 100%;
+  bottom: 0px;
+  z-index: 10;
+  background-color: #ededed;
+
+}
+
+footer>div {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #dcdcdc;
+  padding: 0.5rem 0px;
+}
+
+.tc {
+  text-align: center;
+}
+
+
+/* 选择器1 选择器2 
+选择器中间有空格，表示里面的元素
+例如：footer div{}
+表示只要是在footer里面的div，不论是多少层级都会生效
+不同于>号只能有一级*/
+footer .iconfont {
+  font-size: 1.4rem;
+}
+
+.active-icon {
+  /* 激活的图标 */
+  color: #43a047;
+}
+
+.z1 i {
+  font-size: 1.2rem;
+
+}
+
+.z1 {
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.z2 {
+  background-image: url(微信头像.jpg);
+  background-size: cover;
+  height: 70px;
+  width: 70px;
+  border: 0.1px solid white;
+  border-radius: 5px;
+  margin: 0px 20px;
+}
+
+.z3 {
+  display: flex;
+
+}
+
+.z4 {
+  padding-bottom: 25px;
+}
+
+.z5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 30px 0px;
+}
+
+.z6 {
+  padding-top: 50px;
+  font-size: 1.2rem;
+  color: #9e9e9e;
+}
+
+.z6 i {
+  font-size: 1.2rem;
+
+}
+
+.z7 {
+  color: #9e9e9e;
+  font-size: 0.9rem;
+}
+
+header {
+  background-color: #fff;
+}
+
+.z8 {
+  border-bottom: 10px solid #ededed;
+}
+
+section {
+  background-color: #fff;
+}
+
+.z9 {
+  color: #9e9e9e;
+  padding: 5px;
+}
+
+.z10 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.z11 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.z12 {
+  color: #4caf50;
+}
+
+.z13 {
+  color: #2196f3;
+}
+.z14{
+  color: #ffa726;
+}
+.z15{
+  border-top:1px solid #ededed;
+  margin-left: 50px;
+}

@@ -1,0 +1,117 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navs span {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+}
+
+
+.navs span:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.navs {
+  position: relative;
+}
+
+.bar {
+  background-color: blueviolet;
+  height: 0.2rem;
+  width: 33.33333%;
+  position: absolute;
+  left: 0%;
+  transition: left 0.5s;
+}
+
+.pages {
+  position: relative;
+  height: 100vh;
+}
+
+#page01 {
+  background-image: url(七龙珠.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+}
+
+#page02 {
+  background-image: url(童话.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#page03 {
+  background-image: url(地球.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+}
+
+#page04 {
+  background-image: url(火车.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#page05 {
+  background-image: url(派大星.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+}
+
+@keyframes move-out {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.move-out {
+  animation: move-out 1s;
+  left: -100% !important;
+}
+
+@keyframes move-in {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.move-in {
+  animation: move-in 1s;
+  left: 0% !important;
+}

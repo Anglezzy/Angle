@@ -1,0 +1,46 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* 文字左对齐 */
+.t1 {
+  text-align: left;
+}
+
+/* 文本居中 */
+.tc {
+  text-align: center;
+}
+
+/* 文字右对齐 */
+.tr {
+  text-align: right;
+}
+
+/* 一批字体大小 */
+
+.fs10 {
+  font-size: 1rem;
+}
+
+.fs12 {
+  font-size: 1.2rem;
+}
+
+.fs14 {
+  font-size: 1.4rem;
+}
+
+.fs16 {
+  font-size: 1.6rem;
+}
+
+.fs18 {
+  font-size: 1.8rem;
+}
+
+.fs20 {
+  font-size: 2.0rem;
+
+}
