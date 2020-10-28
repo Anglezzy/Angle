@@ -1,0 +1,98 @@
+body {
+  font-size: 1.2rem;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 100;
+  background-color: whitesmoke;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1691404 */
+  src: url('//at.alicdn.com/t/font_1691404_mzjd2dzelvp.eot');
+  src: url('//at.alicdn.com/t/font_1691404_mzjd2dzelvp.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1691404_mzjd2dzelvp.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1691404_mzjd2dzelvp.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1691404_mzjd2dzelvp.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1691404_mzjd2dzelvp.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  outline: none;
+  border-width: 0px;
+  font-size: 1.2rem;
+  color: rgb(87, 87, 87);
+  background-color: transparent;
+}
+
+i {
+  font-size: 1.2rem;
+}
+
+#btnsp>i {
+  font-size: 1.5rem;
+}
+
+.div01 {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myinput {
+  border: 1px solid #96a5b4;
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem;
+}
+
+.box01 {
+  margin-bottom: 1rem;
+  font-weight: 200;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.box01>i {
+  font-size: 5rem;
+}
+
+#btnsp {
+  cursor: pointer;
+
+}
+
+#btnsp:hover {
+  color: #96a5b4;
+}
+
+.div02 {
+  text-align: right;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+#div01 {
+  text-align: center;
+  font-size: 1rem;
+  color: #575757;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #96a5b4;
+}

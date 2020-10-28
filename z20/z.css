@@ -1,0 +1,59 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#div01 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+#div01>div {
+  margin: 2px;
+  padding: 5px;
+}
+
+#div02 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+#div02>div {
+  margin: 2px;
+  padding: 5px;
+}
+
+#div03 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+#div03>div {
+  margin: 2px;
+  padding: 5px;
+}
+
+#div04 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+#div04>div {
+  margin: 2px;
+  padding: 5px;
+}
+
+#div05 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+#div05>div {
+  margin: 2px;
+  padding: 5px;
+}

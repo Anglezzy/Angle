@@ -1,0 +1,25 @@
+.ani01,
+.ani02 {
+  width: 100px;
+  height: 100px;
+  animation: ani 2s infinite;
+}
+
+.ani01 {
+  background-color: #ff0000;
+}
+
+.ani02 {
+  background-color: #ff00ff;
+  /* 变形的重心点，默认值是中间 */
+  transform-origin: center right;
+}
+
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}

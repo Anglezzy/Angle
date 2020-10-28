@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/post.css">
+</head>
+
+<body>
+  <!-- <span class="btn btn-danger">按钮</span> -->
+  <header class="jumbotron text-center">
+    欢迎来到黑暗骑士的简易论坛
+  </header>
+  <section id="secPost">
+    <!-- <div>
+      <div>web前端基础-never say never</div>
+      <div>发帖时间：2020-05-10 10:11:12</div>
+    </div> -->
+  </section>
+
+  <!-- 另外风格的论坛显示 -->
+  <section id="divList">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="panel-title">发帖人</div>
+      </div>
+      <div class="panel-body">
+        标题
+      </div>
+      <div class="panel-footer">
+        发帖时间
+      </div>
+    </div>
+  </section>
+
+  <!-- jquery的导入一点要在bootstrap的上面，因为bootstrapy -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- 页面的js在最后 -->
+  <script src="../ajax/js/ajax.js"></script>
+  <script src="js/post.js"></script>
+</body>
+
+</html>

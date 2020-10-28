@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+}
+
+#divImages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#divImages>div {
+  width: 19%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+
+#divImages img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn01 {
+  text-align: center;
+}
+
+.btn02 {
+  text-align: center;
+}
+
+.btn02>button {
+  border: 0px;
+  padding: 0.5rem 1rem;
+  background-color: #94a8bd59;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+#divResult {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn01>button {
+  border: 0px;
+  padding: 0.5rem 1rem;
+  background-color: #94a8bd59;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.input01 {
+  width: 48rem;
+  outline: none;
+  border-width: 0px;
+  color: rgb(87, 87, 87);
+  background-color: transparent;
+  margin-top: 1rem;
+  border: 1px solid #96a5b4;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}

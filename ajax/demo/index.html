@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ajax的入门演示</title>
+</head>
+
+<body>
+  <!-- 第二步,提供后台parameters小节中需要参数 -->
+  <input type="text" id="txt_echo" placeholder="echo">
+  <button id="btnOne">单一echo参数测试</button>
+
+  <hr>
+  <input type="text" id="txt_pageNumber" placeholder="分页页码">
+  <input type="text" id="txt_pageSize" placeholder="分页大小">
+  <button id="btnTwo">单一对象参数测试</button>
+
+  <hr>
+  <input type="text" id="echo" placeholder="echo">
+  <input type="text" id="pageNumber" placeholder="pageNumber">
+  <input type="text" id="pageSize" placeholder="pageSize">
+  <input type="text" id="nickname" placeholder="nickname">
+  <input type="text" id="username" placeholder="username">
+  <button id="btnThree">多参数设置</button>
+  <hr>
+  <div id="divResp"></div>
+  <div id="divEchoOne"></div>
+  <div id="divEchoTwo"></div>
+  <div id="divEchoThree"></div>
+  <!-- 第一步,导入公共的三个js -->
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。-->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax封装好的api -->
+  <script src="../js/ajax.js"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

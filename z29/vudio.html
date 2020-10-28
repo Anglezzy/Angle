@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>视频管理</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/video.css">
+</head>
+
+<body>
+  <div class="flex-box flex-box-right ">
+    <div>
+      <input type="text" id="txtQname" class="form-control">
+    </div>
+    <span class="btn btn-danger" onclick="query()">查询</span>
+    <span class="btn btn-danger" id="btnAdd">添加</span>
+  </div>
+  <div id="divData" style="text-align: center;">
+    <table class="table" style=" color: #575757; margin-top: 2rem;">
+      <thead>
+        <tr>
+          <th style="text-align: center;">视频名称</th>
+          <th style="text-align: center;">视频地址</th>
+          <th style="text-align: center;">视频信息</th>
+          <th style="text-align: center;">视频是否置顶</th>
+          <th style="text-align: center;">操作</th>
+        </tr>
+      </thead>
+      <tbody id="tbData"></tbody>
+    </table>
+  </div>
+  <!-- 添加 -->
+  <div class="modal fade" id="add-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">添加视频</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group ">
+
+            <div class="input-group" style="margin-top: 1rem;">
+              <span class="input-group-addon iconfont">&#xe608;</span>
+              <input type="text" class="form-control" id="txtname" placeholder="视频名称">
+            </div>
+
+            <div class="input-group box01">
+              <span class="input-group-addon iconfont">&#xe608;</span>
+              <input type="text" class="form-control" id="txturl" placeholder="视频地址">
+            </div>
+
+            <div class="input-group box01">
+              <span class="input-group-addon iconfont">&#xe608;</span>
+              <input type="text" class="form-control" id="txtinfo" placeholder="视频信息">
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary" id="btnSave">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 服务器信息 -->
+  <div class="modal fade" id="info-dialog" style="z-index: 2000;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">信息</h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 修改 -->
+  <div class="modal fade" id="modify-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">修改音频</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+
+            <div class="input-group" style="margin-top: 1rem;">
+              <span class="input-group-addon iconfont">&#xe608;</span>
+              <input type="text" class="form-control" id="txtMname" placeholder="歌曲名称">
+            </div>
+
+            <div class="input-group box01">
+              <span class="input-group-addon iconfont">&#xe608;</span>
+              <input type="text" class="form-control" id="txtMurl" placeholder="视频地址">
+            </div>
+
+            <div class="input-group box01">
+              <span class="input-group-addon iconfont">&#xe608;</span>
+              <input type="text" class="form-control" id="txtMinfo" placeholder="视频信息">
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary" id="btnModify">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 删除 -->
+  <div class="modal fade" id="delete-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">确认删除？</h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button class="btn btn-danger" id="btnDelete">删除</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jquery的导入一定要在bootstrap的上面，因为bootstrap依赖jquery -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax公用 -->
+  <script src="js/ajax.js"></script>
+  <script src="js/video.js"></script>
+</body>
+
+</html>

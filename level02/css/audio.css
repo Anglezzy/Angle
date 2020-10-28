@@ -1,0 +1,27 @@
+/* 压力盒子 */
+.flex-box {
+  display: flex;
+}
+.flex-box-right {
+  justify-content: flex-end;
+}
+/* 内边距 */
+.pd10 {
+  padding: 1rem;
+}
+.pd5 {
+  padding: 0.5rem;
+}
+
+.input-group {
+  margin-top: 0.2rem;
+}
+
+#divData {
+  display: none;
+}
+
+#lylic-dialog .modal-body > pre {
+  max-height: 10em;
+  overflow: auto;
+}

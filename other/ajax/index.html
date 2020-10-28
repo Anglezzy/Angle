@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ajax</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="shortcut icon" href="https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=620&tbOssInfo.obid=11"
+    type="image/jpeg">
+</head>
+
+<body>
+  <header>
+    <div class="box01">
+      <div class="box02">
+        <div class="txt03">AJAX多功能应用</div>
+        <div class="box02 ">
+          <div class="txt02"><a href="ajax03.html" target="_blank">留言板</a></div>
+          <div class="txt02"><a href="ajax04.html" target="_blank">照片墙</a></div>
+          <div class="txt02"><a href="#1">论坛</a></div>
+          <div class="txt02"><a href="#2">用户记事本</a></div>
+        </div>
+      </div>
+      <div class="box02">
+        <div class="txt01"><i class="iconfont">&#xe63d;</i></div>
+        <div id="divUser">
+          <div id="btn01">登录</div>
+        </div>
+        <div class="dis" id="btn02"><i class="iconfont">&#xe60f;</i></div>
+      </div>
+    </div>
+    <div class="box04 dis" id="div01">
+      <span id="btnLogout">
+        安全退出
+      </span>
+    </div>
+    <div class="txt04">
+      <div>生命太短暂,</div>
+      <div>不要去做一些根本没有人想要的东西。</div>
+    </div>
+  </header>
+  <div class="black01">
+    <a name="1"></a>
+    <div class="box06">
+      <div class="box05">
+        <div class="txt05">AJAX的简易论坛</div>
+        <div id="secPost"></div>
+        <div class="box07">
+          <div id="btnPre">上一页</div>
+          <div id="spPage"></div>
+          <div id="btnNext">下一页</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax的基本框架 -->
+  <script src="js/ajax.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

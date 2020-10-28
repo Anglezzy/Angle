@@ -1,0 +1,20 @@
+#myaudio {
+  display: none;
+}
+
+#divList {
+  padding: 5px;
+}
+
+#divList>span {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* 自定义按钮样式 */
+.mubutton {
+  padding: 0.5rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  background-color: #ff0000;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax-分页和json</title>
+    <link rel="stylesheet" href="css/ajax0009.css">
+</head>
+
+<body>
+    <div id="divImages">
+        <!-- <div>
+            <img src="https://pic1.zhimg.com/v2-c917200e3fdbcdcf43217c82c8ac4570_b.gif" alt="">
+        </div>
+     -->
+
+    </div>
+    <div>
+        <button id="btnPre">上一页</button>
+        <span id="spPage"></span>
+        <input type="text" id="txtPageNumber">
+        <button id="btnGo">go</button>
+        <button id="btnNext">下一页</button>
+        <select id="ps">
+            <option value="5">每页5笔记录</option>
+            <option value="5" selected>每页10笔记录</option>
+            <option value="5">每页20笔记录</option>
+        </select>
+    </div>
+    <div id="divResult"></div>
+
+
+    <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!-- qs是用于转换json到http参数的库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+    <!-- ajax的基本框架 -->
+    <script src="js/ajax.js"></script>
+
+    <script src="js/ajax0009.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap3图片跑马灯</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/carousel.css">
+</head>
+
+<body>
+  <!-- 容器,用于固定跑马灯的位置和大小 -->
+  <section id="main">
+    <div>
+      <!-- bootstrap的.img-responsive演示是图片大小自适应 -->
+      <!-- <img class="img-responsive" src="https://img.tt98.com/d/file/96kaifa/201905101559240/001.jpg"> -->
+      <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <!-- 导航 -->
+        <ol class="carousel-indicators">
+          <!--
+             data-target 是指定跑马灯容器元素
+             data-slide-to 是点击滑动到那一个图片
+             active类表示激活的选项
+             -->
+          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#mycarousel" data-slide-to="1" class=""></li>
+          <li data-target="#mycarousel" data-slide-to="2" class=""></li>
+          <li data-target="#mycarousel" data-slide-to="3" class=""></li>
+        </ol>
+        <!-- 图片容器 -->
+        <div class="carousel-inner">
+          <!-- 图片项,要和上面的li(导航) 数量匹配 -->
+          <div class="item active">
+            <img class="img-responsive" src="https://img.tt98.com/d/file/96kaifa/201905101559240/001.jpg">
+            <!-- 图片描述信息 -->
+            <div class="carousel-caption">
+              描述信息
+            </div>
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="https://img.tt98.com/d/file/96kaifa/201905101559240/001.jpg">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="https://img.tt98.com/d/file/96kaifa/201905101559240/001.jpg">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="https://img.tt98.com/d/file/96kaifa/201905101559240/001.jpg">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- jquery的导入一定要在bootstrap的上面，因为bootstrap依赖jquery -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax的基本框架 -->
+  <script src="js/ajax.js"></script>
+
+  <script src="js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url('https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=671&tbOssInfo.obid=11');
+  background-size: cover;
+  color: #fff;
+}
+
+textarea {
+  margin-top: 2rem;
+  resize: none;
+}
+
+.box01 {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  text-align: right;
+}
+
+th {
+  text-align: center;
+}
+
+#tbData>tr:last-child {
+  text-align: center;
+}
+
+#tbData span {
+  margin: 0px 1rem;
+}
+
+#tbData:hover {
+  background-color: rgba(0, 0, 0, 0.226);
+
+}

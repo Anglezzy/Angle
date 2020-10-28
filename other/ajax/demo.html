@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>变量切换形态</title>
+  <style>
+    .style0 {
+      color: red;
+    }
+
+    .style1 {
+      color: green;
+    }
+
+    .style2 {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="btn01">切换一</button>
+  <div id="div01"></div>
+
+  <button id="btn02">切换二</button>
+  <div id="div02"></div>
+
+  <script>
+    var mode01 = "one";
+    var btn01 = document.getElementById('btn01');
+    var div01 = document.getElementById('div01');
+    btn01.addEventListener('click', function () {
+      div01.innerHTML = mode01;
+      if (mode01 == "one") {
+        mode01 = "two";
+        div01.classList.add('style0');
+        div01.classList.remove('style1');
+      } else {
+        mode01 = "one"
+        div01.classList.add('style1');
+        div01.classList.remove('style0');
+      }
+    });
+
+
+    var mode02 = 0;
+    var btn02 = document.getElementById('btn02');
+    var div02 = document.getElementById('div02');
+    btn02.addEventListener('click', function () {
+      div02.classList.remove('style' + mode02);
+      mode02++;
+      mode02 = mode02 % 3;
+      div02.classList.add('style' + mode02);
+      div02.innerHTML = mode02;
+
+    });
+  </script>
+</body>
+
+</html>

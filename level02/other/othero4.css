@@ -1,0 +1,21 @@
+.active {
+  background-color: #0000ff;
+}
+
+#div01 .active {
+  background-color: #ff0000;
+}
+
+/* #div01 {
+  height: 1em;
+  border: 1px solid #ff0000; */
+  /* border-radius: 2px; */
+  /* border-left-width: 0px;
+} */
+
+#spProgress>span,
+#div01>span {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+}

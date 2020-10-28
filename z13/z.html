@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>综合的作业</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">欢迎来到德莱联盟</h1>
+ <input type="text" id="txtUsername" placeholder="用户名的(长度8-20位)">
+ <button id="btnOk1">确定</button>
+ 个人爱好:
+ <label>
+   <input type="checkbox" name="ah" id="ah01" value="游戏">游戏
+ </label>
+ <label>
+   <input type="checkbox" name="ah" id="ah02" value="学习">学习
+ </label>
+ <label>
+   <input type="checkbox" name="ah" id="ah03" value="音乐">音乐
+ </label>
+ <label>
+   <input type="checkbox" name="ah" id="ah04" value="运动">运动
+ </label>
+ <label>
+   <input type="checkbox" id="chkXy">同意用户隐私协议
+ </label>
+ <label>
+   性别:
+   <select id="xb">
+     <option value="m">男</option>
+     <option value="f">女</option>
+     <option value="n" selected>打死也不说</option>
+   </select>
+ </label>
+ <button id="btnOk">确定</button>
+ <span id="spInfo"></span>
+
+ <form action="#" onsubmit="return false;">
+  <label>
+    请输入密码:
+    <input type="password" id="txtPwd" placeholder="密码">
+  </label>
+  <!-- 让文字也有输入效果lable -->
+  <label>
+    <input type="radio" id="rdoYue" value="yue" name="mode">月卡
+  </label>
+  <label>
+    <input type="radio" id="rdoNian" value="nian" name="mode">年卡
+  </label>
+  <label>
+    <input type="radio" id="rdoYJ" value="yj" name="mode">永久
+  </label>
+
+  <div>
+    <label>
+      <input type="checkbox" id="chkShow">显示协议
+    </label>
+    <span id="spShow" style="display: none;">旅途永无止境...</span>
+  </div>
+
+  <button id="btnOk">确定</button>
+  <!-- 
+    input type = reset是按钮，value是按钮文本，只有放在form中会有重置form中所有表单元素到初始值的作用
+   -->
+  <input type="reset" value="重置">
+</form>
+
+<script src="z.js"></script>
+</body>
+
+</html>

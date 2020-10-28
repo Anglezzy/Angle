@@ -1,0 +1,8 @@
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#main>div {
+  width: 600px;
+}

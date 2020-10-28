@@ -1,0 +1,15 @@
+#myaudio {
+  width: 0px;
+  height: 0px;
+}
+
+#divList span,
+#spPlay,
+#spAll {
+  display: inline-block;
+  border: 1px solid #dcdcdc;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>留言板</title>
+  <link rel="stylesheet" href="z.css">
+</head>
+
+<body>
+  <div class="div02">
+    <div id="div04"></div>
+    <div id="div03"></div>
+    <div id="divtxt"></div>
+
+  </div>
+  <div id="btnMore" class="lost">更多</div>
+  <div id="div02" class="div01 dis">
+    <div id="div01"></div>
+    <div class="div02">
+      <textarea class="myinput" name="txt" id="inp01" wrap="soft"></textarea>
+      <div>
+        <div id="btn01">发表</div>
+        <div id="btnQuery">查询</div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <script src="ajax.js"></script>
+  <script src="z.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+#divLoading,
+#divEmployee {
+  display: none;
+}
+
+/* 动态提示信息 */
+#divMessage {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+#divMessage > div {
+  border: 1px solid #ff0000;
+  padding: 1rem;
+}
+
+.message {
+  animation: message 5s infinite;
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(-100%);
+  }
+  20% {
+    transform: translateY(200%);
+  }
+  80% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#divContainer {
+  /* 绝对定位容器 */
+  position: relative;
+  height: 400px;
+}
+#div01,
+#div02 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+#div01 {
+  top: 0px;
+  left: 0px;
+  background-color: #ff0000;
+  z-index: 10;
+}
+
+#div02 {
+  top: 50px;
+  left: 50px;
+  background-color: #0000ff;
+}
+/* 表单相关 */
+.div-input {
+  border: 2px solid #0000ff;
+  border-radius: 2px;
+  padding: 5px 5px;
+  margin: 0.5rem;
+
+  width: 210px;
+}
+.div-input i {
+  color: #ff0000;
+  visibility: hidden;
+}
+.div-input input {
+  border-color: transparent;
+  outline: none;
+}
+
+.error {
+  border-color: #ff0000;
+}
+
+#divNameError {
+  padding: 0.5rem;
+  color: #ff0000;
+  visibility: hidden;
+}
+
+#divPwdError {
+  padding: 0.5rem;
+  color: #ff0000;
+  visibility: hidden;
+}

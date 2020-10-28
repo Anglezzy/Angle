@@ -1,0 +1,16 @@
+img {
+  display: inline-block;
+  width: 600px;
+  height: auto;
+}
+#main {
+  display: none;
+}
+
+#loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}

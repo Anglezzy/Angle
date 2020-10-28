@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回帖管理-必须登陆</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reply.css">
+</head>
+
+<body>
+    <a href="index.html" class="btn btn-danger">返回</a>
+    <!-- 数据呈现部分 -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>帖子标题</th>
+                <th>回帖内容</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="tbData"></tbody>
+    </table>
+
+    <!-- 删除对话框 -->
+    <div class="modal fade" id="delete-dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">删除回帖</h4>
+                </div>
+                <div class="modal-body">
+                    是的删除：<span id="spDel"></span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="btnDel">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- jquery的导入一定要在bootstrap的上面，因为bootstrap依赖jquery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!-- qs是用于转换json到http参数的库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+    <!-- ajax的基本框架 -->
+    <script src="js/ajax.js"></script>
+    <script src="js/reply.js"></script>
+</body>
+
+</html>

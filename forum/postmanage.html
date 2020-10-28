@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帖子管理</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/postmanage.css">
+</head>
+
+<body>
+  <!-- 上方菜单 -->
+  <span class="btn btn-danger" id="btnAdd">我要发贴</span>
+  <a href="index.html" class="btn btn-danger">返回</a>
+  <!-- 数据呈现部分（table) -->
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>标题</th>
+        <th>内容</th>
+        <th>最后修改时间</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <table id="tbData"></table>
+  </table>
+  <!-- 发帖的弹出式对话框 -->
+  <div class="modal fade" id="add-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">发贴</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input type="text" id="txtTitle" placeholder="帖子的标题" class="form-control">
+            <textarea cols="30" rows="5" id="txtConttent" class="form-control" placeholder="帖子内容"
+              style="resize: none;"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <span class="btn btn-primary" id="btnAddPost">发帖</span>
+          <span class="btn btn-default" id="btnAddClose">关闭</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 删除的弹出式对话框 -->
+  <div class="modal fade" id="delete-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">确定删除</h4>
+        </div>
+        <div class="modal-body">
+          是否删除：<span id="spDelInfo"></span>?
+        </div>
+        <div class="modal-footer">
+          <span class="btn btn-danger" id="btnDelInfo">删除</span>
+          <span class="btn btn-info" id="btnDelClose">关闭</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 修改的弹出式对话框 -->
+  <div class="modal fade" id="modify-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">修改帖子</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="txtMtitle">
+          <textarea cols="30" rows="5" class="form-control" id="Mcontent"></textarea>
+        </div>
+        <div class="modal-footer">
+          <span class="btn btn-info" id="btnSavePost">保存</span>
+          <span class="btn btn-danger" id="btnModifyClose">关闭</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jquery的导入一点要在bootstrap的上面，因为bootstrapy -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- 页面的js在最后 -->
+  <script src="../ajax/js/ajax.js"></script>
+  <script src="js/postmanage.js"></script>
+</body>
+
+</html>

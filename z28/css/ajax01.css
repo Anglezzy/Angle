@@ -1,0 +1,87 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 100;
+}
+
+.block {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  border-width: 0px;
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid black;
+  width: 300px;
+
+}
+
+input:focus-within {
+  border-color: rgb(201, 201, 201);
+}
+
+.block>div div {
+  margin: 1rem 0px;
+}
+
+.btn01 {
+  outline: none;
+  border-width: 0px;
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
+.btn01:hover {
+  cursor: pointer;
+}
+
+.box01 {
+  text-align: right;
+}
+
+#divMessage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-150%);
+}
+
+.message {
+  animation: message 5s infinite;
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  20% {
+    transform: translateY(200%);
+  }
+
+  80% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(-150%);
+  }
+}
+
+.error {
+  border-color: tomato;
+}
+
+.error:focus-within {
+  border-color: tomato;
+}

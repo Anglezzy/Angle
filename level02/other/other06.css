@@ -1,0 +1,18 @@
+.flex-box {
+  display: flex;
+}
+
+.progress {
+  border: 1px solid #acacac;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.progress>span {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin: 0px 1px;
+  background-color: #0000ac;
+}

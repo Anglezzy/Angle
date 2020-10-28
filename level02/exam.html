@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>考试复习</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/exam.css">
+</head>
+
+<body>
+  <!-- 上方菜单 -->
+  <div>
+    <span class="btn btn-info" id="btnShowAdd">添加</span>
+    <span class="btn btn-info" onclick="query()">查询</span>
+  </div>
+  <!-- 数据表格 -->
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>文件名称</th>
+        <th>url地址</th>
+        <th>文件描述</th>
+        <th>是否置顶</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="tbData"></tbody>
+  </table>
+
+  <!-- 99乘法表 -->
+  <table id="tb99" class="table">
+    <tbody></tbody>
+  </table>
+
+  <!-- 添加的弹出对话框 -->
+  <div class="modal fade" id="add-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">添加图片</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+
+            <div class="input-group">
+              <span class="input-group-addon">图片信息</span>
+              <input type="text" class="form-control" id="txt_info">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon">图片名称</span>
+              <input type="text" class="form-control" id="txt_name">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon">图片地址</span>
+              <input type="text" class="form-control" id="txt_url">
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary" id="btnAdd">添加</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 弹出信息对话框 -->
+  <div class="modal fade" id="info-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">消息</h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 删除对话框 -->
+  <div class="modal fade" id="del-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">删除确认</h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" id="btnDel">确认</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery的导入一定要在bootstrap的上面，因为bootstrap依赖jquery -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax公用 -->
+  <script src="js/ajax.js"></script>
+
+  <script src="js/exam.js"></script>
+</body>
+
+</html>

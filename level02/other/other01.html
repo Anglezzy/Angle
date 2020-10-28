@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全屏移动</title>
+  <link rel="stylesheet" href="other01.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="move1">第一个</div>
+    <div class="move1">第二个</div>
+    <div class="move1">第三个</div>
+    <div class="move1">第四个</div>
+    <div class="move1">第五个</div>
+  </div>
+
+  <nav>
+    <span id="btnPre">上一页</span>
+    <!-- 事件的其他写法，直接on事件名称= "js代码" -->
+    <span onclick="index=3;changeMoveclass();">第三页</span>
+    <span id="btn04">第四页</span>
+    <span id="btnNext">下一页</span>
+    <!-- 通过下拉导航 -->
+    <select id="selPage"></select>
+    <!-- 自动播放模式开关 -->
+    <label>
+      <input type="checkbox" id="chkAuto">自动切换
+    </label>
+  </nav>
+
+  <script src="other01.js"></script>
+
+</body>
+
+</html>

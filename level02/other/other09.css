@@ -1,0 +1,35 @@
+.container>div {
+  position: relative;
+  overflow: hidden;
+  height: 20rem;
+}
+
+.container>div>div:nth-child(1) {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container>div>div:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.container>div>div:nth-child(2)>div {
+  width: 170vw;
+  display: flex;
+}
+
+.container>div>div:nth-child(2)>div>div {
+  width: 40vw;
+  height: 180px;
+  border: 1px solid #ff0000;
+  margin: 1rem;
+  background-color: #acacac;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音频管理-需要登陆</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/audio.css">
+</head>
+
+<body>
+  <!-- 上方查询和添加菜单 -->
+  <div class="flex-box flex-box-right pd5">
+    <div class="input-group">
+      <span class="input-group-addon iconfont">&#xe624;</span>
+      <input type="text" id="txtQname" class="form-control" placeholder="名称模糊查询">
+    </div>
+    <!-- on事件名称="js代码或者function" -->
+    <span class="btn btn-primary" onclick="query()">查询</span>
+    <span class="btn btn-primary" id="btnShowAdd">添加</span>
+  </div>
+
+  <!-- 数据呈现的部分 -->
+  <div>
+    <!-- 查询等待提示 -->
+    <div id="divLoading">
+      正在查询数据中，请稍后
+    </div>
+    <!-- 数据显示表格 -->
+    <div id="divData">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>歌曲名称</th>
+            <th>歌曲地址</th>
+            <th>歌曲信息</th>
+            <th>歌曲是否置顶</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody id="tbData"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 添加的对话框 -->
+  <div class="modal fade" id="add-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">添加音频</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+
+            <div class="input-group">
+              <span class="input-group-addon iconfont">&#xe624;</span>
+              <input type="text" class="form-control" id="txtname" placeholder="歌曲名称">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon iconfont">&#xe79c;</span>
+              <input type="text" class="form-control" id="txturl" placeholder="歌曲地址">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon iconfont">&#xe627;</span>
+              <input type="text" class="form-control" id="txtinfo" placeholder="歌曲信息">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon iconfont">&#xe727;</span>
+              <textarea id="txtlylic" rows="8" class="form-control" placeholder="歌词"></textarea>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary" id="btnSave">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 修改的对话框 -->
+  <div class="modal fade" id="modify-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">修改音频</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+
+            <div class="input-group">
+              <span class="input-group-addon iconfont">&#xe624;</span>
+              <input type="text" class="form-control" id="txtMname" placeholder="歌曲名称">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon iconfont">&#xe79c;</span>
+              <input type="text" class="form-control" id="txtMurl" placeholder="歌曲地址">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon iconfont">&#xe627;</span>
+              <input type="text" class="form-control" id="txtMinfo" placeholder="歌曲信息">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon iconfont">&#xe727;</span>
+              <textarea id="txtMlylic" rows="8" class="form-control" placeholder="歌词"></textarea>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary" id="btnModify">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 删除信息确认对话框 -->
+  <div class="modal fade" id="delete-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">确认删除？</h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button class="btn btn-danger" id="btnDelete">删除</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 服务器信息显示对话框 -->
+  <div class="modal fade" id="info-dialog" style="z-index: 2000;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">信息</h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 歌词显示对话框 -->
+  <div class="modal fade" id="lylic-dialog" style="z-index: 1800;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">歌词</h4>
+        </div>
+        <div class="modal-body">
+          <pre></pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery的导入一定要在bootstrap的上面，因为bootstrap依赖jquery -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax公用 -->
+  <script src="js/ajax.js"></script>
+
+  <script src="js/audio.js"></script>
+</body>
+
+</html>

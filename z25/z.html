@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>照片墙</title>
+  <link rel="stylesheet" href="z.css">
+</head>
+
+<body>
+  <div class="btn01">
+    <input type="text" id="txtContent" class="input01">
+    <button id="btnAdd">添加</button>
+    <button id="btnQuery">查询</button>
+    <button id="btnMore">加载更多</button></div>
+  </div>
+  <div id="divResult"></div>
+  <div id="divImages">
+  </div>
+  <div class="btn02">
+    <button id="btnPre">上一页</button>
+    <span id="spPage"></span>
+    <input type="text" id="txtPageNumber">
+    <button id="btnGo">go</button>
+    <button id="btnNext">下一页</button>
+  </div>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax的基本框架 -->
+  <script src="ajax.js"></script>
+  <script src="z.js"></script>
+</body>
+
+</html>

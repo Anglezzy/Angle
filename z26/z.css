@@ -1,0 +1,94 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.div01 {
+  width: 100%;
+  text-align: center;
+}
+
+textarea {
+  outline: none;
+  border-width: 0px;
+  width: 50vw;
+  resize: none;
+  height: 0rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.myinput {
+  border: 1px solid #96a5b4;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding-bottom: 12rem;
+}
+
+.div02 {
+  display: flex;
+  justify-content: center;
+}
+
+#btn01 {
+  background-color: rgb(196, 233, 255);
+  border-radius: 5px;
+  padding: 0.2rem 0.7rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+#btnQuery {
+  background-color: rgb(196, 233, 255);
+  border-radius: 5px;
+  padding: 0.2rem 0.7rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#divtxt div {
+  background-color: rgb(228, 228, 228);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 2rem 0rem;
+  width: 70vw;
+}
+
+#div01 {
+  margin-right: 3rem;
+  margin-bottom: 0.5rem;
+  color: #56697c;
+}
+
+.div03 {
+  background-color: #96a5b4;
+  margin-right: 2rem;
+  width: 0.2rem;
+  height: 5.3rem;
+}
+
+.dis {
+  position: fixed;
+  bottom: 2rem;
+}
+
+img {
+  width: 3.5rem;
+  border-radius: 100%;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+#btnMore {
+  margin-top: -1rem;
+  margin-left: 63rem;
+  text-align: center;
+  cursor: pointer;
+  color: #56697c;
+}
+
+.lost {
+  display: none;
+}

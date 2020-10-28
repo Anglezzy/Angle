@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>论坛首页</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="z.css">
+</head>
+
+<body>
+  <div class="div01">
+    后摇论坛
+  </div>
+  <section id="secPost">
+
+  </section>
+  <div class="div02">
+    <div>
+      <button id="btnPre">上一页</button>
+      <span id="spPage"></span>
+      <input type="text" id="txtPageNumber">
+      <button id="btnGo">go</button>
+      <button id="btnNext">下一页</button>
+    </div>
+  </div>
+  <!-- jquery的导入一点要在bootstrap的上面，因为bootstrapy -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- 页面的js在最后 -->
+  <script src="ajax.js"></script>
+  <script src="z.js"></script>
+
+</body>
+
+</html>

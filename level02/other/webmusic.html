@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网络音乐</title>
+  <link rel="stylesheet" href="webmusic.css">
+</head>
+
+<body>
+  <audio src="" id="myaudio"></audio>
+  <!-- 歌曲列表 -->
+  <div id="list"></div>
+  <div>
+    <!-- 歌曲信息 -->
+    <div id="divInfo"></div>
+    <!-- 歌词信息 -->
+    <div id="divLylic"></div>
+    <!-- 控制信息 -->
+    <div id="divControl"></div>
+  </div>
+
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax公用 -->
+  <script src="../js/ajax.js"></script>
+  <script src="webmusic.js"></script>
+</body>
+
+</html>

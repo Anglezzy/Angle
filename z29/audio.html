@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音乐播放器</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/audio.css">
+</head>
+
+<body id="body">
+  <div class="bg">
+    <audio id="myaudio" src=""></audio>
+
+    <div class="flex-box">
+      <div style="width: 50vw;">
+        <div class="flex-box box01">
+          <div><i class="iconfont">&#xe61c;</i> 收藏</div>
+          <div><i class="iconfont">&#xe606;</i> 添加到</div>
+          <div><i class="iconfont">&#xe940;</i> 下载</div>
+          <div><i class="iconfont">&#xe645;</i> 删除</div>
+          <div><i class="iconfont">&#xe6c6;</i> 清空列表</div>
+        </div>
+        <div id="divList"></div>
+      </div>
+      <div style="margin-top: 5rem; width: 20vw;text-align: center;">
+        <div>
+          <img id="divImg" src="" width="250px">
+        </div>
+        <div id="divLylic"></div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; position: fixed; bottom: 5rem;width: 100%;">
+      <div class="txt" style="display: flex; position: relative; left: -10rem;">
+        <div><i id="splost" style="cursor: pointer;" class="iconfont">&#xe679;</i></div>
+        <div><i id="spPlay" style="cursor: pointer;" class="iconfont">&#xe613;</i></div>
+        <div><i id="spnext" style="cursor: pointer;" class="iconfont">&#xe620;</i></div>
+      </div>
+      <div style=" position: relative; left: -10rem; top: -1.2rem;">
+        <div style="margin-bottom: -0.5rem;" id="txt01"></div>
+        <div id="spProgress">
+        </div>
+      </div>
+      <div style="display: flex; margin-left: 2rem; position: relative; left: -10rem;"><i class="iconfont">&#xe732;</i>
+        <div style="margin:0px 1rem;margin-top: -0.2rem;" id="div01"></div>
+        <div id="div02"></div>
+      </div>
+    </div>
+  </div>
+  <!-- jquery的导入一定要在bootstrap的上面，因为bootstrap依赖jquery -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax公用 -->
+  <script src="js/ajax.js"></script>
+
+  <script src="js/audio.js"></script>
+</body>
+
+</html>

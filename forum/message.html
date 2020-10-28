@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人笔记本</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/message.css">
+</head>
+
+<body>
+  <div class="text-right">
+    <span class="btn btn-primary" id="btnAdd">添加笔记</span>
+    <a href="index.html" class="btn btn-info"> 返回</a>
+  </div>
+  <hr>
+  <!-- 消息对话框 -->
+
+  <div class="modal fade" id="alert-dialog" style="z-index: 2000;">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">消息</h4>
+        </div>
+        <div class="modal-body" id="divMessage">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 添加对话框 -->
+
+  <div class="modal fade" id="add-dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">添加</h4>
+        </div>
+        <div class="modal-body">
+          <textarea id="txtNoteInfo" cols="30" rows="10" class="form-control" placeholder="笔记信息"></textarea>
+        </div>
+        <div class="modal-footer">
+          <span class="btn btn-primary" id="btnAddInfo">保存</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery的导入一点要在bootstrap的上面，因为bootstrapy -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- 页面的js在最后 -->
+  <script src="../ajax/js/ajax.js"></script>
+  <script src="js/message.js"></script>
+</body>
+
+</html>

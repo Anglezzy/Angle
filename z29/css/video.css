@@ -1,0 +1,63 @@
+body {
+  margin: 0px;
+  background: #7F7FD5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1691404 */
+  src: url('//at.alicdn.com/t/font_1691404_bkfcu9wz53r.eot');
+  src: url('//at.alicdn.com/t/font_1691404_bkfcu9wz53r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1691404_bkfcu9wz53r.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1691404_bkfcu9wz53r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1691404_bkfcu9wz53r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1691404_bkfcu9wz53r.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-box-right {
+  justify-content: flex-end;
+}
+
+.flex-box div {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.flex-box input {
+  width: 20vw;
+}
+
+.flex-box span {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.box01 {
+  margin-top: 2rem;
+}
+
+.btn01 {
+  display: inline-block;
+  margin-right: 2rem;
+}

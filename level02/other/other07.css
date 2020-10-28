@@ -1,0 +1,68 @@
+body {
+  margin: 0px;
+  background-image: url('https://images5.alphacoders.com/101/1014466.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body>div:nth-child(1) {
+  margin: 2rem;
+  width: 200px;
+  height: 200px;
+  /* 背景滤镜,blur是虚化 */
+  backdrop-filter: blur(5px);
+}
+
+body>div:nth-child(2) {
+  margin: 2rem;
+  width: 200px;
+  height: 200px;
+  /* 元素自身滤镜,blur是虚化 */
+  filter: blur(2px);
+}
+
+/* before伪元素,表示该元素前面虚拟的元素 */
+body>dov:nth-child(3)>div::before {
+  /* 修改内容 */
+  content: '<';
+  /* 其他样式 */
+  color: #ff0000;
+}
+
+/* after,元素后面的内容 */
+body>div:nth-child(3)>div::after {
+  content: '>';
+  color: #ff0000;
+}
+
+body>div:nth-child(4)>div::before {
+  /* attr可以获取属性的值 */
+  content: attr(data-index);
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+body>div:nth-child(4)>div {
+  position: relative;
+}
+
+body>div:nth-child(4)>div::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scaleX(0);
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+
+body>div:nth-child(4)>div:hover::after {
+  transform: scaleX(1);
+}

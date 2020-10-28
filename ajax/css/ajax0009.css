@@ -1,0 +1,18 @@
+#divImages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#divImages div {
+  width: 19%;
+  padding: 1rem;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+  margin: 2px;
+}
+
+#divImages img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

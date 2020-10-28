@@ -1,0 +1,78 @@
+body {
+  /* padding 内边距 */
+  padding: 0px;
+  /* margin 外边距 */
+  margin: 0px;
+  /* background-color 背景颜色 */
+  background-color: #F7F5F5;
+  text-align: center;
+  font-size: 1rem;
+}
+
+a {
+  color: black;
+  /* 文本修饰 取消 */
+  text-decoration: none;
+  padding: 6px;
+  margin: 8px;
+}
+
+a:hover {
+  /* boder是边框 */
+  border: 1px solid black;
+  background: #e0e0e0;
+  color: white;
+}
+
+.tc {
+  font-size: 1rem;
+  padding: 10px 0px 0px 0px;
+}
+
+
+.zzy1 {
+  background: white;
+  /* height 高度 */
+  height: 1.8px;
+  /* margin 宽度 */
+  margin: 0px 0px 60px 0px;
+
+}
+
+
+.zzy2 {
+  padding: 20px 0px 18px 0px;
+  margin: 10px;
+
+}
+
+.zzy3 {
+  padding: 50px 0px 20px 0px;
+}
+
+.zzy4 {
+  height: 1.8px;
+  background: white;
+  margin: 30px 0px 10px 0px;
+}
+
+div {
+  /* display 压力盒子的水平居中 */
+  display: flex;
+  /* 子元素水平居中 */
+  justify-content: space-around;
+  padding: 5px;
+}
+
+footer {
+  padding: 20px 0px 30px 0px;
+  font-size: 2rem;
+}
+
+.ylbj {
+  display: flex;
+  /* 当子元素超过文案时换行 */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+

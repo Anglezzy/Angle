@@ -1,0 +1,51 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+}
+
+.div01 {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+}
+
+section {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+section>div {
+  background-color: white;
+  margin: 1rem;
+  padding: 3rem 6rem;
+  border-radius: 5px;
+}
+
+section>div div {
+  margin-bottom: 1rem;
+}
+
+.div02 {
+  position: fixed;
+  bottom: 2rem;
+}
+
+.div02 button {
+  border: 0px;
+  padding: 0.5rem 1rem;
+  background-color: #94a8bd59;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.div02>div {
+  width: 100vw;
+  text-align: center;
+}

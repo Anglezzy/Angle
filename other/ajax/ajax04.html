@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>照片墙</title>
+  <link rel="stylesheet" href="css/ajax04.css">
+</head>
+
+<body>
+  <div class="block02">
+    <div class="box06">
+      <div><input type="text" id="txtContent"></div>
+      <div id="btnAdd">上传</div>
+      <div id="btnQuery01">刷新</div>
+    </div>
+    <div id="divResult01"></div>
+    <div id="divimgs"></div>
+    <div class="box07">
+      <div id="btnPre">上一页</div>
+      <div id="spPage"></div>
+      <div id="btnNext">下一页</div>
+    </div>
+  </div>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax的基本框架 -->
+  <script src="js/ajax.js"></script>
+  <script src="js/ajax04.js"></script>
+</body>
+
+</html>

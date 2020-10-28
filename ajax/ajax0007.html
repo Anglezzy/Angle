@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网络照片墙功能</title>
+  <link rel="stylesheet" href="css/ajax0007.css">
+</head>
+
+<body>
+  <div>
+    <input type="text" id="txtContent" placeholder="网络图片链接地址">
+    <button id="btnAdd">添加</button>
+    <button id="btnQuery">查询</button>
+    <button id="btnMore">加载更多</button>
+    <div id="divResult"></div>
+    <div id="divImages"></div>
+  </div>
+
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax的基本框架 -->
+  <script src="js/ajax.js"></script>
+
+  <script src="js/ajax0007.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据联动</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/link.css">
+</head>
+
+<body>
+  <div style="display: flex;">
+    <!-- 省份信息 -->
+    <select id="selProvince" class="form-control"></select>
+    <!-- 城市信息 -->
+    <select id="selCity" class="form-control"></select>
+    <!-- 选中信息 -->
+    <div id="spInfo" style="width: 280px;">省份城市选中项</div>
+  </div>
+  <!-- 联动的其他效果模式,省份下拉变化,城市是表格显示 -->
+  <div>
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>省份</th>
+          <th>城市</th>
+        </tr>
+      </thead>
+      <tbody id="tabCity"></tbody>
+    </table>
+  </div>
+
+  <!-- jquery的导入一定要在bootstrap的上面，因为bootstrap依赖jquery -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax公用 -->
+  <script src="js/ajax.js"></script>
+  <script src="js/link.js"></script>
+</body>
+
+</html>

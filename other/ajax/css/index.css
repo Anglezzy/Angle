@@ -1,0 +1,227 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  min-width: 1366px;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1825566 */
+  src: url('//at.alicdn.com/t/font_1825566_iu25s4gski.eot');
+  src: url('//at.alicdn.com/t/font_1825566_iu25s4gski.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1825566_iu25s4gski.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1825566_iu25s4gski.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1825566_iu25s4gski.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1825566_iu25s4gski.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  height: 100vh;
+  background-image: url('https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=657&tbOssInfo.obid=11');
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.box01 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 0rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.box02 {
+  display: flex;
+}
+
+.txt01 {
+  margin-right: 0.7rem;
+  margin-top: -0.2rem;
+}
+
+.txt01 i {
+  font-size: 1.7rem;
+  color: rgb(180, 180, 180);
+}
+
+#btn01 {
+  cursor: pointer;
+}
+
+.txt02 {
+  margin-left: 6rem;
+  cursor: pointer;
+}
+
+.txt02:hover {
+  color: rgb(190, 190, 190);
+}
+
+.txt03 {
+  margin-right: 4rem;
+  font-size: 1.5rem;
+  margin-top: -0.4rem;
+}
+
+.txt04 {
+  text-align: right;
+  font-weight: 100;
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+.txt04>div:first-child {
+  font-size: 3rem;
+  margin-bottom: 1.3rem;
+  margin-right: 1.2rem;
+}
+
+.txt04>div:last-child {
+  font-size: 2rem;
+}
+
+
+
+.box03 {
+  font-size: 1.2rem;
+  position: fixed;
+  top: 1rem;
+  left: 1.1rem;
+
+}
+
+header a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#btn02 i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+
+.dis {
+  display: none;
+}
+
+.box04 {
+  text-align: right;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-right: 1.5rem;
+}
+
+.box04 span {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1rem;
+}
+
+#btnLogout {
+  cursor: pointer;
+}
+
+.black01 {
+  background-image: url('https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=672&tbOssInfo.obid=11');
+  background-size: cover;
+  height: 100vh;
+}
+
+.box05 {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 36rem;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+}
+
+.box06 {
+  display: flex;
+  justify-content: center;
+}
+
+.txt05 {
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin: 0.5rem 4rem;
+}
+
+.display {
+  display: flex;
+}
+
+#secPost>div {
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
+
+#secPost>div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#secPost>div>div {
+  margin-bottom: 0.5rem;
+}
+
+#secPost i {
+  font-size: 1.5rem;
+}
+
+#secPost>div>div>div {
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+#secPost>div>div:nth-child(1) {
+  margin-left: 5rem;
+}
+
+#secPost>div>div:nth-child(2) {
+  text-align: center;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+}
+
+#secPost>div>div:nth-child(3) {
+  text-align: right;
+  font-size: 0.8rem;
+  margin-right: 5rem;
+}
+
+.box07 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.box07 div {
+  margin: 0px 2rem;
+}
+
+#btnPre {
+  cursor: pointer;
+}
+
+#btnNext {
+  cursor: pointer;
+}
+
+.bor {
+  height: 0.9px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 1rem 4rem;
+
+}

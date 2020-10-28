@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户登录</title>
+  <link rel="stylesheet" href="css/ajax01.css">
+</head>
+
+<body>
+  <div id="divMessage"></div>
+  <div class="block">
+    <div>
+      <div>
+        <input type="text" placeholder="用户名" id="inpName">
+      </div>
+      <div>
+        <input type="password" placeholder="密码" id="inpPwd">
+      </div>
+      <div class="box01">
+        <button class="btn01" id="btnOk">登录</button>
+      </div>
+    </div>
+  </div>
+  <!-- jquery的导入一点要在bootstrap的上面，因为bootstrap -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- 页面的js在最后 -->
+  <script src="js/ajax.js"></script>
+  <script src="js/ajax1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户登录</title>
+  <link rel="stylesheet" href="css/ajax01.css">
+</head>
+
+<body>
+  <div>
+    <div class="main">
+      <div class="container a-container" id="a-container">
+        <form class="form" id="a-form" method="" action="">
+          <div id="div02"></div>
+          <h2 class="form_title title">创建一个账号</h2>
+          <input class="form__input" id="txtnickname01" type="text" placeholder="昵称">
+          <input class="form__input" id="txtuesrname01" type="text" placeholder="账号">
+          <input class="form__input" id="txtpwd01" type="password" placeholder="密码">
+          <button class="button submit" id="btnsp01">注册</button>
+          <button id="btn01" class=" button01 submit">返回</button>
+        </form>
+      </div>
+      <div class="container b-container" id="b-container">
+        <form class="form" id="b-form" method="" action="">
+          <div id="div01"></div>
+          <h2 class="form_title title">登录网站</h2>
+          <input class="form__input" type="text" id="txtuesrname" placeholder="账号">
+          <input class="form__input" type="password" id="txtpwd" placeholder="密码">
+          <button class="button submit" id="btnsp">登录</button>
+        </form>
+      </div>
+
+      <div class="switch" id="switch-cnt">
+        <div class="switch__circle"></div>
+        <div class="switch__circle switch__circle--t"></div>
+        <div class="switch__container" id="switch-c1">
+          <h2 class="switch__title title">欢迎来到这里！</h2>
+          <p class="switch__description description">为了与我们保持联系，请注册一个账号</p>
+          <button class="switch__button button switch-btn">登录</button>
+        </div>
+        <div class="switch__container is-hidden" id="switch-c2">
+          <h2 class="switch__title title">你好朋友！</h2>
+          <p class="switch__description description">输入你的个人账号信息并与我们一起开始旅程</p>
+          <button class="switch__button button switch-btn">注册</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- ajax的基本框架 -->
+  <script src="js/ajax.js"></script>
+  <script src="js/ajax01.js"></script>
+</body>
+
+</html>

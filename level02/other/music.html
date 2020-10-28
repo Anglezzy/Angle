@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>播放器</title>
+  <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+  <audio src="" id="myaudio"></audio>
+  <!-- 歌曲列表 -->
+  <div id="divList"></div>
+  <!-- 播放区 -->
+  <div>
+    <span id="spAll">全部播放</span>
+    <!-- 歌曲描述 -->
+    <div id="divInfo">
+    </div>
+    <!-- 歌词 -->
+    <div id="divGc"></div>
+    <!-- 进度条 -->
+    <div>
+      <progress id="myprogress" max="100" value="0"></progress>
+    </div>
+    <!-- 播放控制 -->
+    <div>
+      <span id="spPlay">暂停</span>
+    </div>
+
+    <progress id="myvolume" max="100" value="0"></progress>
+  </div>
+
+  <script src="music.js"></script>
+</body>
+
+</html>

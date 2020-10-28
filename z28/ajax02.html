@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据联动</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/ajax03.css">
+</head>
+
+<body>
+  <div style="display: flex;">
+    <select id="selProvince" class="form-control"></select>
+    <select id="selCity" class="form-control"></select>
+  </div>
+  <div style="display: flex;">
+    <select class="form-control" id="selDepartment"></select>
+    <select class="form-control" id="selEmployees"></select>
+  </div>
+  <!-- jquery的导入一点要在bootstrap的上面，因为bootstrap -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Axios 是一个基于 promise 的 HTTP 库,可以用在浏览器和 Node.js 中。作用是ajax访问 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- qs是用于转换json到http参数的库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <!-- 页面的js在最后 -->
+  <script src="js/ajax1.js"></script>
+  <script src="js/ajax03.js"></script>
+</body>
+
+</html>
